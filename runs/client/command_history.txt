@@ -1,0 +1,44 @@
+/clear
+/gamemode survival
+/time set 3000
+/difficulty peaceful
+/gamerule doDaylightCycle false
+/gamemode creative
+/gamemode survival
+/weather clear
+/gamerule doWeatherCycle false
+/gamemode spectator
+/gamemode creative
+/time set 3000
+/gamerule doDaylightCycle false
+/gamerule doWeatherCycle false
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/clear
+/difficulty peaceful
+/gamemode survival
+/give @a dimtech:vendar_ore 10
+/gamemode creative
+/time add 1000
+/gamemode survival
+/give @a dimtech:vendar_ore 10
+/gamemode creative
+/time add 1500
+/give @a minecraft:diamond_pickaxe
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/clear
+/gamemode creative
+/gamemode survival
+/give @a dimtech:coal_ore_iron 64
+/give @a tnt
+/give @a minecraft:flint_and_steel
+/give @a tnt 64
+/gamemode creative

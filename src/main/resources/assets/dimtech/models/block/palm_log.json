@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "dimtech:blocks/palm_top",
+        "side": "dimtech:blocks/palm_log"
+    }
+}

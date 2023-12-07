@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "dimtech:blocks/endfection_top_b",
+        "down": "dimtech:blocks/endfection_side",
+        "up": "dimtech:blocks/endfection_top_b",
+        "north": "dimtech:blocks/endfection_side_full",
+        "east": "dimtech:blocks/endfection_side_full",
+        "south": "dimtech:blocks/endfection_side_full",
+        "west": "dimtech:blocks/endfection_side_full"
+    }
+}

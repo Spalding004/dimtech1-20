@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  	{ "model": "dimtech:block/beech_wood" },
+        "axis=z":   { "model": "dimtech:block/beech_wood", "x": 90 },
+        "axis=x":   { "model": "dimtech:block/beech_wood", "x": 90, "y": 90 }
+    }
+}

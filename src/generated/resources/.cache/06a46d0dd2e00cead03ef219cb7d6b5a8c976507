@@ -1,0 +1,3 @@
+// 1.20.2	2023-12-07T17:37:59.6251917	Tags for minecraft:block mod id dimtech
+d8669bf3f9f57191f3430c3bbbe52c503006777b data/minecraft/tags/blocks/mineable/pickaxe.json
+fd08858de8a762644f1e3caa565daaba6890e735 data/minecraft/tags/blocks/needs_diamond_tool.json

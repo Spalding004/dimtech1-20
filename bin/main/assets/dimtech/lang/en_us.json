@@ -1,0 +1,208 @@
+{
+
+
+"item.dimtech.vendar_chunk" : "Raw Vendar",
+"item.dimtech.diamond_sliver" : "Diamond Sliver",
+"item.dimtech.iron_chunk" : "Iron Ore Chunk",
+"item.dimtech.gold_chunk" : "Gold Ore Chunk",
+"item.dimtech.umber_gold_chunk" : "Umber Gold Ore Chunk",
+"item.dimtech.vendar_nugget" : "Vendar Nugget",
+"item.dimtech.vendar_ingot" : "Vendar Ingot",
+"item.dimtech.polishing_stone" : "Pumice Polishing Stone",
+"item.dimtech.end_essence" : "End Essence",
+"item.dimtech.fractured_lapis" : "Fractured Lapis Lazuli",
+"item.dimtech.lapis_shard" : "Lapis Lazuli Shard",
+"item.dimtech.reduced_lapis_nugget" : "Reduced Lapis Nugget",
+"item.dimtech.reduced_lapis_ingot" : "Reduced Lapis Ingot",
+
+"item.dimtech.sawblade" : "Diamond-Tipped Indirium Shredder",
+
+"item.dimtech.saving_book" : "Book O' Protection",
+"item.dimtech.unknown_item" : "Unknown Item",
+"item.dimtech.raw_cheval" : "Raw Cheval",
+"item.dimtech.cheval_steak" : "Cheval Steak",
+
+"item.dimtech.vironium_nugget" : "Vironium Nugget",
+"item.dimtech.vironium_ingot" : "Vironium Ingot",
+"item.dimtech.vironium_ore_chunk" : "Raw Vironium",
+
+"item.dimtech.geldar_nugget" : "Geldar Nugget",
+"item.dimtech.geldar_ingot" : "Geldar Ingot",
+"item.dimtech.geldar_ore_chunk" : "Raw Geldar",
+
+"item.dimtech.indirium_nugget" : "Indirium Nugget",
+"item.dimtech.indirium_ingot" : "Indirium Ingot",
+"item.dimtech.indirium_chunk" : "Raw Indirium",
+
+"item.dimtech.ingot_silver" : "Silver Ingot",
+"item.dimtech.dust_silver" : "Silver Dust",
+"item.dimtech.dust_silver_fine" : "Fine Silver Dust",
+
+"item.dimtech.charged_carbon" : "Charged Carbon",
+"item.dimtech.replicating_crystal" : "Replicating Crystal",
+"item.dimtech.sawdust" : "Sawdust",
+"item.dimtech.wood_pulp" : "Wood Pulp",
+"item.dimtech.inert_crystal" : "Inert Crystal",
+
+"item.dimtech.card_basic" : "Dimensional Card (Overworld)",
+"item.dimtech.card_nether" : "Dimensional Card (Nether)",
+"item.dimtech.card_end" : "Dimensional Card (End)",
+
+"item.dimtech.card_wither" : "Withered Card",
+"item.dimtech.lapis_essence_bucket" : "Lapis Essence Bucket",
+
+"item.dimtech.energetic_crystal" : "Energetic Crystal",
+"item.dimtech.dimensional_conductor" : "Dimensional Conductor",
+"block.dimtech.vendar_casing" : "Vendar Machine Casing",
+"block.dimtech.indirium_casing" : "Indirium Machine Casing",
+"item.dimtech.steel_ingot" : "Steel Ingot",
+
+"item.dimtech.tool_vendar_pickaxe" : "Vendar Pickaxe",
+"item.dimtech.tool_vendar_axe" : "Vendar Axe",
+"item.dimtech.tool_vendar_sword" : "Vendar Sword",
+"item.dimtech.tool_vendar_shovel" : "Vendar Shovel",
+"item.dimtech.tool_vendar_hoe" : "Vendar Hoe",
+"item.dimtech.tool_vendar_frakhammer" : "Vendar Frakhammer",
+
+"item.dimtech.iron_frakhammer" : "Iron Frakhammer",
+
+"item.dimtech.tool_enhanced_handle" : "Enhanced Tool Handle",
+"item.dimtech.nether_pearl" : "Nethered Pearl",
+"item.dimtech.nether_gaze" : "Nether Gaze",
+
+"item.dimtech.indirium_gear" : "Indirium Gear",
+"item.dimtech.vendar_gear" : "Vendar Gear",
+
+
+
+"block.dimtech.marcasite" : "Marcasite",
+"block.dimtech.marcasite_smooth" : "Polished Marcasite",
+
+"block.dimtech.voidstone" : "Voidstone",
+"block.dimtech.voidstone_polished" : "Polished Voidstone",
+"block.dimtech.voidstone_cobble" : "Cobbled Voidstone",
+
+"block.dimtech.cobblerack" : "Cobblerack",
+"block.dimtech.cobbled_netherrend" : "Cobbled Netherrend",
+"block.dimtech.netherrend" : "Netherrend",
+"block.dimtech.crape_myrtle_log" : "Crape Myrtle Log",
+"block.dimtech.crape_myrtle_leaves" : "Crape Myrtle Leaves",
+"block.dimtech.crape_myrtle_leaves_blossom" : "Blossoming Crape Myrtle Leaves",
+"block.dimtech.crape_myrtle_planks" : "Crape Myrtle Planks",
+
+"block.dimtech.energetic_ore" : "Energetic Ore",
+
+"block.dimtech.alunite" : "Alunite",
+"block.dimtech.alunite_smooth" : "Polished alunite",
+
+
+"block.dimtech.umber" : "Umber",
+"block.dimtech.umber_smooth" : "Polished Umber",
+
+"block.dimtech.cormalite" : "Cormalite",
+"block.dimtech.cormalite_smooth" : "Polished Cormalite",
+
+"block.dimtech.shale" : "Shale",
+"block.dimtech.shale_smooth" : "Polished Shale",
+"block.dimtech.prismarine_ore" : "Prismarine Ore",
+
+"block.dimtech.apatite" : "Blue Slate",
+"block.dimtech.apatite_smooth" : "Polished Blue Slate",
+
+"block.dimtech.pumice" : "Pumice",
+
+"block.dimtech.crape_myrtle_cutting" : "Crape Myrtle Cutting",
+
+"block.dimtech.endcroached_netherrack" : "Endcroachment",
+"block.dimtech.endfected_netherrack_a" : "Endfection",
+"block.dimtech.endfected_netherrack_b" : "Endfection",
+"block.dimtech.endfected_netherrack_c" : "Endfection",
+"block.dimtech.endfected_nether_quartz_ore" : "Endfected Nether Quartz Ore",
+"block.dimtech.endfected_obsidian" : "Endfected Obsidian",
+
+"block.dimtech.coal_ore_diamond" : "Diamond-Riddled Coal Ore",
+"block.dimtech.coal_ore_emerald" : "Emerald-Riddled Coal Ore",
+"block.dimtech.coal_ore_redstone" : "Redstone-Riddled Coal Ore",
+"block.dimtech.coal_ore_iron" : "Iron-Riddled Coal Ore",
+"block.dimtech.coal_ore_gold" : "Gold-Riddled Coal Ore",
+"block.dimtech.coal_ore_lapis" : "Lapis Lazuli-Riddled Coal Ore",
+"block.dimtech.coal_ore_copper" : "Copper-Riddled Coal Ore",
+
+"block.dimtech.mixed_stone" : "Mixed Stone",
+"block.dimtech.mixed_stone_stairs" : "Mixed Stone Stairs",
+"block.dimtech.mixed_stone_wall" : "Mixed Stone Wall",
+
+"block.dimtech.vendar_ore" : "Vendar Ore",
+"block.dimtech.umber_gold_ore" : "Umber Gold Ore",
+"block.dimtech.vendar_ore_dense" : "Vendar Ore",
+"block.dimtech.indirium_ore" : "Indirium Ore",
+
+"block.dimtech.beech_log" : "Copper Beech Log",
+"block.dimtech.beech_log_stripped" : "Stripped Copper Beech Log",
+"block.dimtech.beech_wood" : "Copper Beech Wood",
+"block.dimtech.beech_wood_stripped" : "Stripped Copper Beech Wood",
+"block.dimtech.beech_leaves" : "Copper Beech Leaves",
+"block.dimtech.beech_stairs" : "Copper Beech Stairs",
+"block.dimtech.beech_sapling" : "Copper Beech Sapling",
+"block.dimtech.beech_planks" : "Copper Beech Planks",
+"block.dimtech.beech_fence" : "Copper Beech Fence",
+"block.dimtech.beech_slab" : "Copper Beech Slab",
+
+"block.dimtech.woven_leather" : "Woven Leather",
+
+"block.dimtech.yew_log" : "Yew Wood",
+"block.dimtech.yew_leaves" : "Yew Leaves",
+"block.dimtech.yew_stairs" : "Yew Stairs",
+"block.dimtech.yew_sapling" : "Yew Sapling",
+"block.dimtech.yew_planks" : "Yew Planks",
+"block.dimtech.yew_fence" : "Yew Fence",
+
+"block.dimtech.palm_log" : "Ancient Palm Wood",
+"block.dimtech.palm_leaves" : "Ancient Palm Leaves",
+"block.dimtech.palm_stairs" : "Ancient Palm Stairs",
+"block.dimtech.palm_sapling" : "Ancient Palm Sapling",
+"block.dimtech.palm_planks" : "Ancient Palm Planks",
+"block.dimtech.palm_fence" : "Ancient Palm Fence",
+
+"block.dimtech.petrified_log" : "Petrified Wood",
+"block.dimtech.petrified_planks" : "Petrified Wood Planks",
+"block.dimtech.petrified_wall" : "Petrified Wood Wall",
+"block.dimtech.petrified_stairs" : "Petrified Wood Stairs",
+
+"block.dimtech.fabricator" : "Dimensional Fabricator",
+"block.dimtech.recombobulator" : "Lapal Recombobulator",
+"block.dimtech.frakhammer" : "Automatic Frakhammer",
+"block.dimtech.thresher" : "Attenuated Thresher",
+"block.dimtech.combinatrix" : "Essential Combinatrix",
+
+"block.dimtech.vironium_ore" : "Vironium Ore",
+"block.dimtech.geldar_ore" : "Geldar Ore",
+
+"block.dimtech.vironium_ore_chunk" : "Raw Vironium",
+"block.dimtech.geldar_ore_chunk" : "Raw Geldar",
+
+"misc.dimtech.fuelleft" : "Fuel Remaining: %s%s",
+
+"recomb.dimtech.has_book" : "Enchantments Protected!",
+"recomb.dimtech.no_book" : "Enchantments Not Protected",
+
+"container.dimtech.fabricator" : "Dimensional Fabricator",
+"container.dimtech.frakhammer" : "Automatic Frakhammer",
+"container.dimtech.combinatrix" : "Essential Combinatrix",
+"container.dimtech.recombobulator" : "Lapal Recombobulator",
+"container.dimtech.thresher" : "Attenuated Thresher",
+
+"itemGroup.mod_creative_tab" : "Spalding's Additions",
+
+"death.attack.void_walking" : "%1$s felt the touch of the Void.",
+"death.attack.nether_gaze" : "%1$s decided to explode. How sad.",
+"death.attack.lapal_poisoning" : "%1$s became one with energy.",
+
+"tooltip.dimtech.nether_pearl" : "It's hot hot hot!",
+"tooltip.dimtech.nether_gaze" : "WARNING: Explosive",
+"tooltip.dimtech.saving_book" : "Put in a Recombobulator to protect enchantments!",
+"tooltip.dimtech.lapal_fuel" : "Lapal Fuel (%s LE)"
+
+
+
+}

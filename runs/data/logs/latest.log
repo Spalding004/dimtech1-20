@@ -1,0 +1,109 @@
+[07Dec2023 17:38:51.242] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mod, dimtech, --all, --output, D:\GameDev\MC Modding\dimtech1-20\src\generated\resources, --existing, D:\GameDev\MC Modding\dimtech1-20\src\main\resources, --launchTarget, forgedatauserdev, --assetIndex, asset-index, --assetsDir, C:\Users\mclai\.gradle\caches\minecraft\assets\1.20.2, --gameDir, ., --fml.neoForgeVersion, 20.2.86, --fml.fmlVersion, 1.0.16, --fml.mcVersion, 1.20.2, --fml.neoFormVersion, 20231019.002635]
+[07Dec2023 17:38:51.246] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[07Dec2023 17:38:51.449] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[07Dec2023 17:38:51.483] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/mclai/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23172!/ Service=ModLauncher Env=CLIENT
+[07Dec2023 17:38:51.625] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\mclai\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-java\1.0.16\2ddedcd8a488fd73e3e92a59949845e9c3a7d9f2\language-java-1.0.16.jar is missing mods.toml file
+[07Dec2023 17:38:51.627] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\mclai\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-lowcode\1.0.16\e627c78870d4286826c4b14c0137319ff03b4e0\language-lowcode-1.0.16.jar is missing mods.toml file
+[07Dec2023 17:38:51.628] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\mclai\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\core\1.0.16\6bab0913ca1635a8e272ef89c17befb52115a3c2\core-1.0.16.jar is missing mods.toml file
+[07Dec2023 17:38:51.630] [main/WARN] [net.neoforged.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\mclai\.gradle\caches\modules-2\files-2.1\net.neoforged.fancymodloader\language-minecraft\1.0.16\c1f7785ff7fc0b18aa6d2d4056dcff4fee1b32be\language-minecraft-1.0.16.jar is missing mods.toml file
+[07Dec2023 17:38:51.639] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-java-1.0.16.jar" of type LANGPROVIDER with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.639] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-lowcode-1.0.16.jar" of type LANGPROVIDER with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.639] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "core-1.0.16.jar" of type LIBRARY with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.639] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-minecraft-1.0.16.jar" of type LANGPROVIDER with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.640] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-20.2.86.jar" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.640] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "main" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.640] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "" of type MOD with provider net.neoforged.fml.loading.moddiscovery.MinecraftLocator@58dea0a5
+[07Dec2023 17:38:51.655] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "events-1.0.16.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.BuiltinGameLibraryLocator@2472c7d8
+[07Dec2023 17:38:51.717] [main/INFO] [net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[07Dec2023 17:38:51.718] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinextras-neoforge-0.3.1.jar" of type GAMELIBRARY with provider net.neoforged.fml.loading.moddiscovery.JarInJarDependencyLocator@4163f1cd
+[07Dec2023 17:38:52.845] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\mclai\.gradle\caches\minecraft\assets\1.20.2, --mod, dimtech, --all, --output, D:\GameDev\MC Modding\dimtech1-20\src\generated\resources, --existing, D:\GameDev\MC Modding\dimtech1-20\src\main\resources, --assetIndex, asset-index]
+[07Dec2023 17:38:53.499] [main/INFO] [net.neoforged.neoforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [dimtech]
+[07Dec2023 17:38:57.500] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 20.2.86, for MC 1.20.2 with MCP 20231019.002635
+[07Dec2023 17:38:58.252] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/GameDev/MC%20Modding/dimtech1-20/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.2.86/neoforge-20.2.86.jar%23192!/assets/.mcassetsroot' uses unexpected schema
+[07Dec2023 17:38:58.254] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/GameDev/MC%20Modding/dimtech1-20/.gradle/repositories/ng_dummy_ng/net/neoforged/neoforge/20.2.86/neoforge-20.2.86.jar%23192!/data/.mcassetsroot' uses unexpected schema
+[07Dec2023 17:38:58.290] [main/ERROR] [net.minecraft.server.packs.AbstractPackResources/]: Couldn't load filter metadata
+com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 6 column 20 path $.pack.pack_format
+	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:438) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:443) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.util.GsonHelper.parse(GsonHelper.java:507) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.util.GsonHelper.parse(GsonHelper.java:515) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.AbstractPackResources.getMetadataFromStream(AbstractPackResources.java:46) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:35) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.resources.MultiPackResourceManager.getPackFilterSection(MultiPackResourceManager.java:61) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.resources.MultiPackResourceManager.<init>(MultiPackResourceManager.java:30) ~[neoforge-20.2.86.jar:?]
+	at net.neoforged.neoforge.common.data.ExistingFileHelper.<init>(ExistingFileHelper.java:126) ~[neoforge-20.2.86.jar:?]
+	at net.neoforged.neoforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:54) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.data.Main.main(Main.java:92) ~[neoforge-20.2.86.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:126) ~[loader-1.0.16.jar:1.0]
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:122) ~[loader-1.0.16.jar:1.0]
+	at net.neoforged.fml.loading.targets.ForgeDataUserdevLaunchHandler.runService(ForgeDataUserdevLaunchHandler.java:22) ~[loader-1.0.16.jar:1.0]
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:108) ~[loader-1.0.16.jar:1.0]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 6 column 20 path $.pack.pack_format
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1659) ~[gson-2.10.1.jar:?]
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1465) ~[gson-2.10.1.jar:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:602) ~[gson-2.10.1.jar:?]
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:786) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007) ~[gson-2.10.1.jar:?]
+	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:436) ~[neoforge-20.2.86.jar:?]
+	... 26 more
+[07Dec2023 17:38:58.331] [main/ERROR] [net.minecraft.server.packs.AbstractPackResources/]: Couldn't load filter metadata
+com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 6 column 20 path $.pack.pack_format
+	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:438) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:443) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.util.GsonHelper.parse(GsonHelper.java:507) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.util.GsonHelper.parse(GsonHelper.java:515) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.AbstractPackResources.getMetadataFromStream(AbstractPackResources.java:46) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.AbstractPackResources.getMetadataSection(AbstractPackResources.java:35) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.resources.MultiPackResourceManager.getPackFilterSection(MultiPackResourceManager.java:61) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.server.packs.resources.MultiPackResourceManager.<init>(MultiPackResourceManager.java:30) ~[neoforge-20.2.86.jar:?]
+	at net.neoforged.neoforge.common.data.ExistingFileHelper.<init>(ExistingFileHelper.java:127) ~[neoforge-20.2.86.jar:?]
+	at net.neoforged.neoforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:54) ~[neoforge-20.2.86.jar:?]
+	at net.minecraft.data.Main.main(Main.java:92) ~[neoforge-20.2.86.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:126) ~[loader-1.0.16.jar:1.0]
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:122) ~[loader-1.0.16.jar:1.0]
+	at net.neoforged.fml.loading.targets.ForgeDataUserdevLaunchHandler.runService(ForgeDataUserdevLaunchHandler.java:22) ~[loader-1.0.16.jar:1.0]
+	at net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:108) ~[loader-1.0.16.jar:1.0]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 6 column 20 path $.pack.pack_format
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1659) ~[gson-2.10.1.jar:?]
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1465) ~[gson-2.10.1.jar:?]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:602) ~[gson-2.10.1.jar:?]
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:786) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007) ~[gson-2.10.1.jar:?]
+	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:436) ~[neoforge-20.2.86.jar:?]
+	... 26 more
+[07Dec2023 17:38:58.553] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[07Dec2023 17:38:58.598] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 43 ms
+[07Dec2023 17:38:58.598] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id dimtech
+[07Dec2023 17:38:58.625] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id dimtech finished after 26 ms
+[07Dec2023 17:38:58.625] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id dimtech
+[07Dec2023 17:38:58.626] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id dimtech finished after 1 ms
+[07Dec2023 17:38:58.626] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 73 ms
+[07Dec2023 17:38:58.633] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 26, old count: 26, new count: 27, removed stale: 0, written: 0

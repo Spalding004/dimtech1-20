@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "dimtech:blocks/crape_myrtle_cutting"
+    }
+}

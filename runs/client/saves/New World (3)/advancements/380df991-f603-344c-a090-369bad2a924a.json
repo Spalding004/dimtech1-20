@@ -1,0 +1,48 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2023-12-05 11:29:09 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2023-12-05 11:45:06 -0600",
+      "minecraft:cherry_grove": "2023-12-05 11:30:09 -0600",
+      "minecraft:river": "2023-12-05 11:29:36 -0600",
+      "minecraft:plains": "2023-12-05 11:29:10 -0600"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/torch": {
+    "criteria": {
+      "has_stone_pickaxe": "2023-12-05 14:32:34 -0600"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2023-12-05 14:32:34 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_pickaxe": "2023-12-05 14:32:35 -0600"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2023-12-05 14:32:35 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2023-12-05 14:32:35 -0600"
+    },
+    "done": true
+  },
+  "DataVersion": 3578
+}

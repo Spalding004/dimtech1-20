@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "dimtech:blocks/mixed_stone",
+        "top": "dimtech:blocks/mixed_stone",
+        "side": "dimtech:blocks/mixed_stone"
+    }
+}

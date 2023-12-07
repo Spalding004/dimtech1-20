@@ -1,0 +1,28 @@
+{
+  "values": [
+    "dimtech:marcasite",
+    "dimtech:shale",
+    "dimtech:apatite",
+    "dimtech:alunite",
+    "dimtech:umber",
+    "dimtech:cormalite",
+    "dimtech:pumice",
+    "dimtech:voidstone",
+    "dimtech:mixed_stone",
+    "dimtech:vendar_ore",
+    "dimtech:vendar_ore_dense",
+    "dimtech:indirium_ore",
+    "dimtech:geldar_ore",
+    "dimtech:vironium_ore",
+    "dimtech:coal_ore_lapis",
+    "dimtech:coal_ore_redstone",
+    "dimtech:coal_ore_emerald",
+    "dimtech:coal_ore_iron",
+    "dimtech:coal_ore_gold",
+    "dimtech:coal_ore_copper",
+    "dimtech:coal_ore_diamond",
+    "dimtech:cobblerack",
+    "dimtech:cobbled_netherrend",
+    "dimtech:netherrend"
+  ]
+}
