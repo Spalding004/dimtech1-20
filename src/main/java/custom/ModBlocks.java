@@ -1,15 +1,15 @@
-package com.mrspalding.dimtech.objects.mod;
+package custom;
 
 import java.util.ArrayList;
 
 import com.mrspalding.dimtech.Dimtech;
-import com.mrspalding.dimtech.objects.ModCoalOre;
-import com.mrspalding.dimtech.objects.ModOre;
-import com.mrspalding.dimtech.objects.ModStone;
 
+import custom.objects.blocks.ModCoalOre;
+import custom.objects.blocks.ModEndcroachment;
+import custom.objects.blocks.ModEndfection;
+import custom.objects.blocks.ModOre;
+import custom.objects.blocks.ModStone;
 import net.minecraft.core.Holder;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -57,9 +57,9 @@ public class ModBlocks {
 	public static final DeferredBlock<ModOre> VENDAR_ORE = BLOCKS.register("vendar_ore", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
 	public static final DeferredBlock<ModOre> VENDAR_ORE_DENSE = BLOCKS.register("vendar_ore_dense", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
 	
-	public static final DeferredBlock<ModOre> INDIRIUM_ORE = BLOCKS.register("indirium_ore", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
-	public static final DeferredBlock<ModOre> GELDAR_ORE = BLOCKS.register("geldar_ore", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
-	public static final DeferredBlock<ModOre> VIRONIUM_ORE = BLOCKS.register("vironium_ore", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
+	public static final DeferredBlock<ModOre> INDIRIUM_ORE = BLOCKS.register("indirium_ore", () -> new ModOre(3, ModItems.INDIRIUM_CHUNK));
+	public static final DeferredBlock<ModOre> GELDAR_ORE = BLOCKS.register("geldar_ore", () -> new ModOre(3, ModItems.GELDAR_CHUNK));
+	public static final DeferredBlock<ModOre> VIRONIUM_ORE = BLOCKS.register("vironium_ore", () -> new ModOre(3, ModItems.VIRONIUM_CHUNK));
 	
 	public static final DeferredBlock<ModCoalOre> COAL_ORE_LAPIS = BLOCKS.register("coal_ore_lapis", () -> new ModCoalOre(1));
 	public static final DeferredBlock<ModCoalOre> COAL_ORE_REDSTONE = BLOCKS.register("coal_ore_redstone", () -> new ModCoalOre(1));
@@ -70,7 +70,12 @@ public class ModBlocks {
 	public static final DeferredBlock<ModCoalOre> COAL_ORE_DIAMOND = BLOCKS.register("coal_ore_diamond", () -> new ModCoalOre(1));
 	
 	
-	
+	//endfection
+	public static final DeferredBlock<ModEndcroachment> ENDCROACHED_NETHERRACK = BLOCKS.register("endcroached_netherrack", () -> new ModEndcroachment());
+	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_A = BLOCKS.register("endfected_netherrack_a", () -> new ModEndfection("A"));
+	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_B = BLOCKS.register("endfected_netherrack_b", () -> new ModEndfection("B"));
+	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_C = BLOCKS.register("endfected_netherrack_c", () -> new ModEndfection("C"));
+	public static final DeferredBlock<ModEndfection> ENDFECTED_OBSIDIAN = BLOCKS.register("endfected_obsidian", () -> new ModEndfection("O"));
 	
 	//dimensional outputs
 	public static final DeferredBlock<ModStone> COBBLERACK = BLOCKS.register("cobblerack", () -> new ModStone());

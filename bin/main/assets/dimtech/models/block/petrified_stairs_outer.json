@@ -1,8 +1,8 @@
 {
     "parent": "block/outer_stairs",
     "textures": {
-        "bottom": "dimtech:blocks/petrified_planks",
-        "top": "dimtech:blocks/petrified_planks",
-        "side": "dimtech:blocks/petrified_planks"
+        "bottom": "dimtech:block/petrified_planks",
+        "top": "dimtech:block/petrified_planks",
+        "side": "dimtech:block/petrified_planks"
     }
 }

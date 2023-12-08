@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "dimtech:blocks/yew_sapling"
+        "layer0": "dimtech:block/yew_sapling"
     }
 }

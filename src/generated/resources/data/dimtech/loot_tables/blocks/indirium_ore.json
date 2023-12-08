@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dimtech:vendar_chunk"
+              "name": "dimtech:indirium_chunk"
             }
           ]
         }
@@ -46,5 +46,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:blocks/indirium_ore"
+  "random_sequence": "dimtech:block/indirium_ore"
 }

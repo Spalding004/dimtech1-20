@@ -2,9 +2,9 @@ package com.mrspalding.dimtech.datagen.loot;
 
 import java.util.Set;
 
-import com.mrspalding.dimtech.objects.ModCoalOre;
-import com.mrspalding.dimtech.objects.ModOre;
-import com.mrspalding.dimtech.objects.mod.ModBlocks;
+import custom.ModBlocks;
+import custom.objects.blocks.ModCoalOre;
+import custom.objects.blocks.ModOre;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;

@@ -1,6 +1,6 @@
 {
     "parent": "block/fence_inventory",
     "textures": {
-        "texture": "dimtech:blocks/beech_planks"
+        "texture": "dimtech:block/beech_planks"
     }
 }

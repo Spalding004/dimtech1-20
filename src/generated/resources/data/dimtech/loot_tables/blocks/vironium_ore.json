@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dimtech:vendar_chunk"
+              "name": "dimtech:vironium_ore_chunk"
             }
           ]
         }
@@ -46,5 +46,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:blocks/vironium_ore"
+  "random_sequence": "dimtech:block/vironium_ore"
 }

@@ -5,9 +5,9 @@ import java.util.List;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
-import com.mrspalding.dimtech.objects.mod.ModBlocks;
-import com.mrspalding.dimtech.objects.mod.ModItems;
 
+import custom.ModBlocks;
+import custom.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;

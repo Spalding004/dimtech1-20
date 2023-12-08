@@ -1,18 +1,18 @@
-package com.mrspalding.dimtech.objects;
+package custom.objects.blocks;
 
-import com.mrspalding.dimtech.objects.mod.ModBlocks;
-
+import custom.ModBlocks;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 
-public class ModOre extends Block{
+public class ModCoalOre extends Block{
 
-	private DeferredItem toDrop;
+	private Item toDrop;
 	
-	public ModOre(int level, DeferredItem toDrop) {
+	public ModCoalOre(int level) {
 		super(BlockBehaviour.Properties
 				.of()
 				.strength(3.0F, 3.0F)
@@ -21,10 +21,12 @@ public class ModOre extends Block{
 		
 		this.toDrop = toDrop;
 		
+		Block block = Blocks.IRON_ORE;
 		
 		ModBlocks.cubes.add(this);
 		ModBlocks.pickaxe.add(this);
-		ModBlocks.ore.add(this);
+		ModBlocks.coal_ores.add(this);
+		
 		
 		switch(level) {
 		
@@ -45,7 +47,7 @@ public class ModOre extends Block{
 		
 	}
 	
-	public DeferredItem getDrop() {
+	public Item getDrop() {
 		return toDrop;
 	}
 	

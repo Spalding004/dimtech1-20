@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "dimtech:blocks/crape_myrtle_log",
-		"particle": "dimtech:blocks/crape_myrtle_log"
+		"2": "dimtech:block/crape_myrtle_log",
+		"particle": "dimtech:block/crape_myrtle_log"
 	},
 	"elements": [
 		{

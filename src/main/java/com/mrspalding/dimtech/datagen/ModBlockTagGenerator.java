@@ -5,11 +5,13 @@ import java.util.concurrent.CompletableFuture;
 import org.jetbrains.annotations.Nullable;
 
 import com.mrspalding.dimtech.Dimtech;
-import com.mrspalding.dimtech.objects.mod.ModBlocks;
 
+import custom.ModBlocks;
+import custom.ModTags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
@@ -36,6 +38,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider{
 		for (int pickable = 0; pickable < ModBlocks.pickaxe.size(); pickable++) {
 			this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.pickaxe.get(pickable));
 		}
+		
+		this.tag(ModTags.Blocks.ENDFECTION_TARGETS).add(
+				Blocks.NETHERRACK,
+				Blocks.NETHER_QUARTZ_ORE,
+				Blocks.CRIMSON_NYLIUM,
+				Blocks.WARPED_NYLIUM,
+				Blocks.CRIMSON_STEM,
+				Blocks.WARPED_STEM,
+				Blocks.BASALT,
+				Blocks.BLACKSTONE,
+				Blocks.OBSIDIAN
+				)//.addTag(ModTags.Blocks.ENDFECTION_TARGETS)
+				;
 		
 		
 		

@@ -1,7 +1,6 @@
-package com.mrspalding.dimtech.objects;
+package custom.objects.blocks;
 
-import com.mrspalding.dimtech.objects.mod.ModBlocks;
-
+import custom.ModBlocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 

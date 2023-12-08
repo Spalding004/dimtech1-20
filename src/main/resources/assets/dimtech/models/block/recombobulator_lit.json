@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "particle": "dimtech:blocks/vendar_machine_side",
-    "down": "dimtech:blocks/vendar_machine_side",
-    "up": "dimtech:blocks/recombobulator_top",
-    "east": "dimtech:blocks/vendar_machine_side",
-    "west": "dimtech:blocks/vendar_machine_side",
-    "north": "dimtech:blocks/recombobulator_front_anim",
-    "south": "dimtech:blocks/vendar_machine_side"
+    "particle": "dimtech:block/vendar_machine_side",
+    "down": "dimtech:block/vendar_machine_side",
+    "up": "dimtech:block/recombobulator_top",
+    "east": "dimtech:block/vendar_machine_side",
+    "west": "dimtech:block/vendar_machine_side",
+    "north": "dimtech:block/recombobulator_front_anim",
+    "south": "dimtech:block/vendar_machine_side"
   }
 }

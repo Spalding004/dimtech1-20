@@ -1,6 +1,6 @@
 {
     "parent": "block/fence_side",
     "textures": {
-        "texture": "dimtech:blocks/yew_planks"
+        "texture": "dimtech:block/yew_planks"
     }
 }

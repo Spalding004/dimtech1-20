@@ -1,7 +1,7 @@
 {
     "parent": "block/cube_column",
     "textures": {
-        "end": "dimtech:blocks/yew_top",
-        "side": "dimtech:blocks/yew_log"
+        "end": "dimtech:block/yew_top",
+        "side": "dimtech:block/yew_log"
     }
 }
