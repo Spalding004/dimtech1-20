@@ -5,9 +5,9 @@ import java.util.List;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
+import com.mrspalding.dimtech.custom.ModBlocks;
+import com.mrspalding.dimtech.custom.ModItems;
 
-import custom.ModBlocks;
-import custom.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
@@ -37,20 +37,16 @@ public class Dimtech
    
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ModItems.VENDAR_CHUNK.get().getDefaultInstance())
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register(MODID +".item_group.creative_tab", () -> CreativeModeTab.builder()
+            .icon(() -> ModItems.VENDAR_INGOT.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-               // output.accept(ModItems.EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             List<ItemStack> items = ModItems.ITEMS.getEntries().stream().map(reg -> new ItemStack(reg.get())).toList();
             output.acceptAll(items);
             }).build());
 
-    // The constructor for the mod class is the first code that is run when your mod is loaded.
-    // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public Dimtech(IEventBus modEventBus)
     {
-        // Register the commonSetup method for modloading
+     
         modEventBus.addListener(this::commonSetup);
 
         

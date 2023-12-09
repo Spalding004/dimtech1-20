@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "dimtech:vironium_ore"
+              "name": "dimtech:prismarine_ore"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dimtech:vironium_ore_chunk"
+              "name": "minecraft:prismarine_crystals"
             }
           ]
         }
@@ -46,5 +46,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:blocks/vironium_ore"
+  "random_sequence": "dimtech:blocks/prismarine_ore"
 }

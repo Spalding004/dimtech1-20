@@ -3,20 +3,14 @@ package com.mrspalding.dimtech.events.lootmodifiers;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.function.Supplier;
-
 import javax.annotation.Nonnull;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
+import com.mrspalding.dimtech.custom.ModItems;
 
-import custom.ModItems;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -24,8 +18,6 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.neoforged.fml.ModList;
-import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
 
@@ -36,6 +28,7 @@ public class ModDropsModifier extends LootModifier {
 		super(conditionsIn);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Nonnull
 	public List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
 		@SuppressWarnings("unused")

@@ -5,9 +5,9 @@ import java.util.concurrent.CompletableFuture;
 import org.jetbrains.annotations.Nullable;
 
 import com.mrspalding.dimtech.Dimtech;
+import com.mrspalding.dimtech.custom.ModBlocks;
+import com.mrspalding.dimtech.custom.ModTags;
 
-import custom.ModBlocks;
-import custom.ModTags;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;

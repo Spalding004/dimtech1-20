@@ -192,7 +192,7 @@
 "container.dimtech.recombobulator" : "Lapal Recombobulator",
 "container.dimtech.thresher" : "Attenuated Thresher",
 
-"itemGroup.mod_creative_tab" : "Spalding's Additions",
+"dimtech.item_group.creative_tab" : "Dim Tech",
 
 "death.attack.void_walking" : "%1$s felt the touch of the Void.",
 "death.attack.nether_gaze" : "%1$s decided to explode. How sad.",
