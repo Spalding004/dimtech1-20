@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dimtech:endfected_netherrack_b"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:block/endfected_netherrack_b"
+  "random_sequence": "dimtech:blocks/endfected_netherrack_b"
 }

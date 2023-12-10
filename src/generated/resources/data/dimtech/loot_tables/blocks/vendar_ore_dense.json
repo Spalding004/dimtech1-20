@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "dimtech:vendar_ore_dense"
+              "name": "minecraft:air"
             },
             {
               "type": "minecraft:item",

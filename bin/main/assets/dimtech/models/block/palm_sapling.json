@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "dimtech:block/palm_sapling"
-    }
-}

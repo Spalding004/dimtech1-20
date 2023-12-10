@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "dimtech:block/beech_planks",
-        "top": "dimtech:block/beech_planks",
-        "side": "dimtech:block/beech_planks"
-    }
-}

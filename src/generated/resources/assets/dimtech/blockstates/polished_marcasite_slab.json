@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/polished_marcasite_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/marcasite_smooth"
+    },
+    "type=top": {
+      "model": "dimtech:block/polished_marcasite_slab_top"
+    }
+  }
+}

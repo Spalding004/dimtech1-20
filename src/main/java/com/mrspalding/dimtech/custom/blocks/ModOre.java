@@ -22,6 +22,7 @@ public class ModOre extends Block{
 		
 		setup(level, toDrop);
 		ModBlocks.ore.add(this);
+		
 			
 	}
 	

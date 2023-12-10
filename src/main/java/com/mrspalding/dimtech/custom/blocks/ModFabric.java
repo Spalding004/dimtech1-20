@@ -20,6 +20,7 @@ public class ModFabric extends Block{
 		
 		
 		ModBlocks.stones.add(this);
+		ModBlocks.cubes.add(this);
 	}
 
 }

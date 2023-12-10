@@ -9,8 +9,12 @@ import com.mrspalding.dimtech.custom.blocks.ModEndcroachment;
 import com.mrspalding.dimtech.custom.blocks.ModEndfection;
 import com.mrspalding.dimtech.custom.blocks.ModFabric;
 import com.mrspalding.dimtech.custom.blocks.ModOre;
+import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
 import com.mrspalding.dimtech.custom.blocks.ModStone;
-import com.mrspalding.dimtech.library.Cobbleable;
+import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
+import com.mrspalding.dimtech.custom.blocks.ModWallStone;
+import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
+import com.mrspalding.dimtech.datagen.helpers.WallMap;
 
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.Items;
@@ -40,6 +44,13 @@ public class ModBlocks {
 	public static ArrayList<Block> shovel = new ArrayList<>();
 	public static ArrayList<Block> hoe = new ArrayList<>();
 	
+	public static ArrayList<Block> stairs = new ArrayList<>();
+	public static ArrayList<Block> walls = new ArrayList<>();
+	public static ArrayList<Block> slabs = new ArrayList<>();
+	public static ArrayList<Block> fences = new ArrayList<>();
+	public static ArrayList<Block> buttons = new ArrayList<>();
+	public static ArrayList<Block> doors = new ArrayList<>();
+	
 	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Dimtech.MODID);
 	
 	//stones (and bowls)
@@ -64,7 +75,11 @@ public class ModBlocks {
 	
 	public static final DeferredBlock<ModStone> MIXED_STONE = BLOCKS.register("mixed_stone", () -> new ModStone());
 	
-	
+	//walls, stairs, slabs
+	public static final DeferredBlock<ModWallStone> POLISHED_MARCASITE_WALL = BLOCKS.register("polished_marcasite_wall", () -> new ModWallStone(WallMap.MARCASITE));
+	public static final DeferredBlock<ModStoneStairs> POLISHED_MARCASITE_STAIRS = BLOCKS.register("polished_marcasite_stairs", 
+			() -> new ModStoneStairs(ModBlocks.MARCASITE_SMOOTH.get().defaultBlockState(), "marcasite"));
+	public static final DeferredBlock<ModSlabStone> POLISHED_MARCASITE_SLAB = BLOCKS.register("polished_marcasite_slab", () -> new ModSlabStone());
 	
 	
 	//ores
@@ -111,8 +126,8 @@ public class ModBlocks {
 		
 		for (int x = 0; x < blockCount; x++) {
 		
-			
-				ModItems.ITEMS.registerSimpleBlockItem((Holder<Block>) blocks[x]);
+			ModItems.ITEMS.registerSimpleBlockItem((Holder<Block>) blocks[x]);
+			//ModItems.ITEMS.registerB
 				
 			
 		

@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "dimtech:indirium_ore"
+              "name": "minecraft:air"
             },
             {
               "type": "minecraft:item",

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dimtech:shale"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:block/shale"
+  "random_sequence": "dimtech:blocks/shale"
 }

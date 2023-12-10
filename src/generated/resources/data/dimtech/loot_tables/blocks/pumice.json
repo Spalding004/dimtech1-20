@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "dimtech:pumice"
+              "name": "minecraft:air"
             },
             {
               "type": "minecraft:item",

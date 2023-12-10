@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dimtech:cormalite_smooth"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0

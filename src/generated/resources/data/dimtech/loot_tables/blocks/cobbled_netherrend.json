@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dimtech:cobbled_netherrend"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:block/cobbled_netherrend"
+  "random_sequence": "dimtech:blocks/cobbled_netherrend"
 }

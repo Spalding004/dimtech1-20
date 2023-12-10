@@ -39,6 +39,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider{
 			this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.pickaxe.get(pickable));
 		}
 		
+		for (int walls = 0; walls <ModBlocks.walls.size(); walls++) {
+			this.tag(BlockTags.WALLS).add(ModBlocks.walls.get(walls));
+		}
+		
 		this.tag(ModTags.Blocks.ENDFECTION_TARGETS).add(
 				Blocks.NETHERRACK,
 				Blocks.NETHER_QUARTZ_ORE,

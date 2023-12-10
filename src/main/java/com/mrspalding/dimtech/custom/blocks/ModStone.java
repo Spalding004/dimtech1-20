@@ -18,6 +18,7 @@ public class ModStone extends Block{
 		
 		ModBlocks.pickaxe.add(this);
 		ModBlocks.stones.add(this);
+		ModBlocks.cubes.add(this);
 	}
 	
 	public ModStone(String name) {
@@ -29,7 +30,7 @@ public class ModStone extends Block{
 				
 		
 		ModBlocks.pickaxe.add(this);
-		
+		ModBlocks.cubes.add(this);
 	}
 
 }

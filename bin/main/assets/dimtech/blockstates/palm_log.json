@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y":  	{ "model": "dimtech:block/palm_log" },
-        "axis=z":   { "model": "dimtech:block/palm_log", "x": 90 },
-        "axis=x":   { "model": "dimtech:block/palm_log", "x": 90, "y": 90 }
-    }
-}

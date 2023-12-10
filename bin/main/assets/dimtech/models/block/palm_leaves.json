@@ -1,7 +1,0 @@
-
-{
-    "parent": "block/leaves",
-    "textures": {
-        "all": "dimtech:block/palm_leaves"
-    }
-}

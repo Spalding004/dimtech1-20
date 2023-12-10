@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "dimtech:block/beech_log_stripped",
-        "side": "dimtech:block/beech_log_stripped"
-    }
-}

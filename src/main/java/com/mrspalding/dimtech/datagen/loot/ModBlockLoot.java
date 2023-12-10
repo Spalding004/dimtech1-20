@@ -6,7 +6,7 @@ import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
 import com.mrspalding.dimtech.custom.blocks.ModCobbleable;
 import com.mrspalding.dimtech.custom.blocks.ModOre;
-import com.mrspalding.dimtech.library.Cobbleable;
+import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dimtech:endfected_obsidian"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:block/endfected_obsidian"
+  "random_sequence": "dimtech:blocks/endfected_obsidian"
 }

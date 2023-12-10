@@ -49,10 +49,10 @@ public class Dimtech
      
         modEventBus.addListener(this::commonSetup);
 
-        
-        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
-        ModBlocks.RegisterBlockItems();
+        ModBlocks.BLOCKS.register(modEventBus);
+        
+       ModBlocks.RegisterBlockItems();
         
        
       

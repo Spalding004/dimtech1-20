@@ -1,7 +1,0 @@
-{
-    "variants": {
-        "axis=y":  	{ "model": "dimtech:block/beech_log_stripped" },
-        "axis=z":   { "model": "dimtech:block/beech_log_stripped", "x": 90 },
-        "axis=x":   { "model": "dimtech:block/beech_log_stripped", "x": 90, "y": 90 }
-    }
-}

@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dimtech:coal_ore_lapis"
+          "name": "minecraft:air"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dimtech:block/coal_ore_lapis"
+  "random_sequence": "dimtech:blocks/coal_ore_lapis"
 }

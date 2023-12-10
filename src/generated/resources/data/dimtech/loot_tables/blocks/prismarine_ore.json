@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "dimtech:prismarine_ore"
+              "name": "minecraft:air"
             },
             {
               "type": "minecraft:item",

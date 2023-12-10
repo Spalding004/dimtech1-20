@@ -1,7 +1,7 @@
 package com.mrspalding.dimtech.custom.blocks;
 
 import com.mrspalding.dimtech.custom.ModBlocks;
-import com.mrspalding.dimtech.library.Cobbleable;
+import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
@@ -25,6 +25,7 @@ public class ModCobbleable extends Block{
 		
 		ModBlocks.pickaxe.add(this);
 		ModBlocks.cobbleable.add(this);
+		ModBlocks.cubes.add(this);
 	}
 	
 	public DeferredBlock getCobble() {

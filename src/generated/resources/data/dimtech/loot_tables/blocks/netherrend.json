@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "dimtech:netherrend"
+              "name": "minecraft:air"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "dimtech:cobbled_netherrend"
+              "name": "minecraft:air"
             }
           ]
         }
