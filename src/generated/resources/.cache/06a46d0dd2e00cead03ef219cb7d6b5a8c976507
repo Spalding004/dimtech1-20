@@ -1,5 +1,5 @@
-// 1.20.2	2023-12-09T22:48:36.4753053	Tags for minecraft:block mod id dimtech
+// 1.20.2	2023-12-10T21:32:32.9770943	Tags for minecraft:block mod id dimtech
 b9f4acdda3e0bb05d93a10bf70dc869cfda027e5 data/dimtech/tags/blocks/endfection_targets.json
-e631073c25d3dde04a275a1049c177ad597f4c1b data/minecraft/tags/blocks/mineable/pickaxe.json
+665da13bd4903117dee4ef4f91547d54c41cea3d data/minecraft/tags/blocks/mineable/pickaxe.json
 f9901af923022752858beebf72643f45d9f7e793 data/minecraft/tags/blocks/needs_diamond_tool.json
-8b519fa2c7d770dc0db5e3d248f7dc8369038570 data/minecraft/tags/blocks/walls.json
+e71f475b0da7ca34eb3f9b9b5cd0666b1296afdc data/minecraft/tags/blocks/walls.json

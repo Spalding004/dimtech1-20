@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/polished_alunite_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/alunite_smooth"
+    },
+    "type=top": {
+      "model": "dimtech:block/polished_alunite_slab_top"
+    }
+  }
+}

@@ -1,24 +1,30 @@
 package com.mrspalding.dimtech.custom.blocks;
 
 import com.mrspalding.dimtech.custom.ModBlocks;
+import com.mrspalding.dimtech.datagen.helpers.StairMap;
+import com.mrspalding.dimtech.datagen.helpers.WallMap;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
+@SuppressWarnings("unchecked")
 public class ModStoneStairs extends StairBlock{
 
-	private String basename;
+
+	
 	
 	@SuppressWarnings("deprecation")
-	public ModStoneStairs(BlockState block, String basename) {
-		super(block, BlockBehaviour.Properties
-				.of()
-				.strength(1.5F, 6F)
-				.requiresCorrectToolForDrops()
-				);
+	public ModStoneStairs(DeferredBlock block) {
+		super(((Block) block.get()).defaultBlockState(), BlockBehaviour.Properties
+		.of()
+		.strength(1.5F, 6F)
+		.requiresCorrectToolForDrops()
+		);
 				
-		this.basename = basename;
+		
 		
 		ModBlocks.pickaxe.add(this);
 		ModBlocks.stones.add(this);
@@ -26,7 +32,6 @@ public class ModStoneStairs extends StairBlock{
 		ModBlocks.stairs.add(this);
 	}
 	
-	public String getBasename() {
-		return this.basename;
-	}
+	
+	
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/polished_apatite_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/apatite_smooth"
+    },
+    "type=top": {
+      "model": "dimtech:block/polished_apatite_slab_top"
+    }
+  }
+}

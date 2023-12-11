@@ -14,6 +14,8 @@ import com.mrspalding.dimtech.custom.blocks.ModStone;
 import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
 import com.mrspalding.dimtech.custom.blocks.ModWallStone;
 import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
+import com.mrspalding.dimtech.datagen.helpers.SlabMap;
+import com.mrspalding.dimtech.datagen.helpers.StairMap;
 import com.mrspalding.dimtech.datagen.helpers.WallMap;
 
 import net.minecraft.core.Holder;
@@ -76,10 +78,35 @@ public class ModBlocks {
 	public static final DeferredBlock<ModStone> MIXED_STONE = BLOCKS.register("mixed_stone", () -> new ModStone());
 	
 	//walls, stairs, slabs
-	public static final DeferredBlock<ModWallStone> POLISHED_MARCASITE_WALL = BLOCKS.register("polished_marcasite_wall", () -> new ModWallStone(WallMap.MARCASITE));
-	public static final DeferredBlock<ModStoneStairs> POLISHED_MARCASITE_STAIRS = BLOCKS.register("polished_marcasite_stairs", 
-			() -> new ModStoneStairs(ModBlocks.MARCASITE_SMOOTH.get().defaultBlockState(), "marcasite"));
+	public static final DeferredBlock<ModWallStone> POLISHED_MARCASITE_WALL = BLOCKS.register("polished_marcasite_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> POLISHED_MARCASITE_STAIRS = BLOCKS.register("polished_marcasite_stairs", () -> new ModStoneStairs(ModBlocks.MARCASITE_SMOOTH));
 	public static final DeferredBlock<ModSlabStone> POLISHED_MARCASITE_SLAB = BLOCKS.register("polished_marcasite_slab", () -> new ModSlabStone());
+		
+	
+	public static final DeferredBlock<ModWallStone> POLISHED_APATITE_WALL = BLOCKS.register("polished_apatite_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> POLISHED_APATITE_STAIRS = BLOCKS.register("polished_apatite_stairs", () -> new ModStoneStairs(ModBlocks.APATITE_SMOOTH));
+	public static final DeferredBlock<ModSlabStone> POLISHED_APATITE_SLAB = BLOCKS.register("polished_apatite_slab", () -> new ModSlabStone());
+	
+	
+	public static final DeferredBlock<ModWallStone> POLISHED_SHALE_WALL = BLOCKS.register("polished_shale_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> POLISHED_SHALE_STAIRS = BLOCKS.register("polished_shale_stairs", () -> new ModStoneStairs(ModBlocks.SHALE_SMOOTH));
+	public static final DeferredBlock<ModSlabStone> POLISHED_SHALE_SLAB = BLOCKS.register("polished_shale_slab", () -> new ModSlabStone());
+	
+	public static final DeferredBlock<ModWallStone> POLISHED_ALUNITE_WALL = BLOCKS.register("polished_alunite_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> POLISHED_ALUNITE_STAIRS = BLOCKS.register("polished_alunite_stairs", () -> new ModStoneStairs(ModBlocks.ALUNITE_SMOOTH));
+	public static final DeferredBlock<ModSlabStone> POLISHED_ALUNITE_SLAB = BLOCKS.register("polished_alunite_slab", () -> new ModSlabStone());
+	
+	public static final DeferredBlock<ModWallStone> MIXED_STONE_WALL = BLOCKS.register("mixed_stone_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> MIXED_STONE_STAIRS = BLOCKS.register("mixed_stone_stairs", () -> new ModStoneStairs(ModBlocks.MIXED_STONE));
+	public static final DeferredBlock<ModSlabStone> MIXED_STONE_SLAB = BLOCKS.register("mixed_stone_slab", () -> new ModSlabStone());
+	
+	public static final DeferredBlock<ModWallStone> POLISHED_CORMALITE_WALL = BLOCKS.register("polished_cormalite_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> POLISHED_CORMALITE_STAIRS = BLOCKS.register("polished_cormalite_stairs", () -> new ModStoneStairs(ModBlocks.CORMALITE_SMOOTH));
+	public static final DeferredBlock<ModSlabStone> POLISHED_CORMALITE_SLAB = BLOCKS.register("polished_cormalite_slab", () -> new ModSlabStone());
+	
+	public static final DeferredBlock<ModWallStone> POLISHED_UMBER_WALL = BLOCKS.register("polished_umber_wall", () -> new ModWallStone());
+	public static final DeferredBlock<ModStoneStairs> POLISHED_UMBER_STAIRS = BLOCKS.register("polished_umber_stairs", () -> new ModStoneStairs(ModBlocks.UMBER_SMOOTH));
+	public static final DeferredBlock<ModSlabStone> POLISHED_UMBER_SLAB = BLOCKS.register("polished_umber_slab", () -> new ModSlabStone());
 	
 	
 	//ores

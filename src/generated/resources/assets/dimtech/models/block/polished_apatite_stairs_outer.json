@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dimtech:block/apatite_smooth",
+    "side": "dimtech:block/apatite_smooth",
+    "top": "dimtech:block/apatite_smooth"
+  }
+}

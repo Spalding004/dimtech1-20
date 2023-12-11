@@ -1,5 +1,6 @@
 package com.mrspalding.dimtech;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -7,6 +8,10 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
+import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
+import com.mrspalding.dimtech.datagen.helpers.SlabMap;
+import com.mrspalding.dimtech.datagen.helpers.StairMap;
+import com.mrspalding.dimtech.datagen.helpers.WallMap;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -30,6 +35,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 @Mod(Dimtech.MODID)
 public class Dimtech
 {
+	
+	public static ArrayList<Cobbleable> COBBLEABLE = new ArrayList<>();
+	public static ArrayList<StairMap> STAIRMAPS = new ArrayList<>();
+	public static ArrayList<WallMap> WALLMAPS = new ArrayList<>();
+	public static ArrayList<SlabMap> SLABMAPS = new ArrayList<>();
    
     public static final String MODID = "dimtech";
  
@@ -52,7 +62,8 @@ public class Dimtech
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         
-       ModBlocks.RegisterBlockItems();
+        
+       //ModBlocks.RegisterBlockItems();
         
        
       

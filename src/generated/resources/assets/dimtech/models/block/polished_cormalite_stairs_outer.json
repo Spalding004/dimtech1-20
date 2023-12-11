@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dimtech:block/cormalite_smooth",
+    "side": "dimtech:block/cormalite_smooth",
+    "top": "dimtech:block/cormalite_smooth"
+  }
+}

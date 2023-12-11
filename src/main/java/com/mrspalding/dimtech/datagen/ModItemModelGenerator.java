@@ -3,6 +3,8 @@ package com.mrspalding.dimtech.datagen;
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
+import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
+import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
 import com.mrspalding.dimtech.custom.blocks.ModWallStone;
 import com.mrspalding.dimtech.datagen.helpers.WallMap;
 
@@ -34,15 +36,42 @@ public class ModItemModelGenerator extends ItemModelProvider{
 			}
 		}
 		
-		for (int walls = 0; walls < ModBlocks.walls.size(); walls++) {
+			wallItem(ModBlocks.POLISHED_APATITE_WALL, ModBlocks.APATITE_SMOOTH);
+			evenSimplerBlockItem(ModBlocks.POLISHED_APATITE_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_APATITE_STAIRS);
+			
+			wallItem(ModBlocks.POLISHED_SHALE_WALL, ModBlocks.SHALE_SMOOTH);
+			evenSimplerBlockItem(ModBlocks.POLISHED_SHALE_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_SHALE_STAIRS);
+			
+			wallItem(ModBlocks.POLISHED_MARCASITE_WALL, ModBlocks.MARCASITE_SMOOTH);
+			evenSimplerBlockItem(ModBlocks.POLISHED_MARCASITE_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_MARCASITE_STAIRS);
+			
+			wallItem(ModBlocks.POLISHED_ALUNITE_WALL, ModBlocks.ALUNITE_SMOOTH);
+			evenSimplerBlockItem(ModBlocks.POLISHED_ALUNITE_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_ALUNITE_STAIRS);
 		
-				wallItem(((ModWallStone) ModBlocks.walls.get(walls)).getWall(), 
-						((ModWallStone) ModBlocks.walls.get(walls)).getBaseBlock());
+			wallItem(ModBlocks.MIXED_STONE_WALL, ModBlocks.MIXED_STONE);
+			evenSimplerBlockItem(ModBlocks.MIXED_STONE_SLAB);
+			evenSimplerBlockItem(ModBlocks.MIXED_STONE_STAIRS);
+			
+			wallItem(ModBlocks.POLISHED_CORMALITE_WALL, ModBlocks.CORMALITE_SMOOTH);
+			evenSimplerBlockItem(ModBlocks.POLISHED_CORMALITE_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_CORMALITE_STAIRS);
+			
+			wallItem(ModBlocks.POLISHED_UMBER_WALL, ModBlocks.UMBER_SMOOTH);
+			evenSimplerBlockItem(ModBlocks.POLISHED_UMBER_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_UMBER_STAIRS);
 		
-		}
 		
 		
 	}
+	
+	 public void evenSimplerBlockItem(DeferredBlock block) {
+	        this.withExistingParent(block.getId().getPath(),
+	                modLoc("block/" + block.getId().getPath()));
+	    }
 	
 	public void wallItem(DeferredBlock block, DeferredBlock baseBlock) {
 		this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))

@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "minecraft:air"
+              "name": "dimtech:geldar_ore"
             },
             {
               "type": "minecraft:item",
