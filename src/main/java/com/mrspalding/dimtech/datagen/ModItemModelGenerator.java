@@ -11,6 +11,7 @@ import com.mrspalding.dimtech.datagen.helpers.WallMap;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -29,10 +30,12 @@ public class ModItemModelGenerator extends ItemModelProvider{
 	protected void registerModels() {
 		
 		for (int x = 0; x < ModItems.ITEMS.getEntries().size(); x++) {
-			if (!ModBlocks.BLOCKS.getEntries().stream().toList().contains(
-					ModItems.ITEMS.getEntries().stream().toList().get(x))) {
-					
-			this.basicItem(BuiltInRegistries.ITEM.get(ModItems.ITEMS.getEntries().stream().toList().get(x).getId()));
+
+			
+			if (!(ModItems.ITEMS.getEntries().stream().toList().get(x).get() instanceof BlockItem)) {
+			
+				this.basicItem(BuiltInRegistries.ITEM.get(ModItems.ITEMS.getEntries().stream().toList().get(x).getId()));
+			
 			}
 		}
 		

@@ -53,7 +53,7 @@ public class ModNetherGaze extends Item{
 
 	      itemHeld.shrink(1);
 	      player.setSecondsOnFire(3 + diff * 2);
-	      player.hurt(player.damageSources().explosion(new Explosion(worldIn, player, null, null, 3 + diff * 2, 3 + diff * 2, 3 + diff * 2, 3 + diff * 2, canRepair, null)), 1F);
+	     // player.hurt(player.damageSources().explosion(new Explosion(worldIn, player, null, null, 3 + diff * 2, 3 + diff * 2, 3 + diff * 2, 3 + diff * 2, canRepair, null)), 1F);
 	      if (!worldIn.isClientSide) {
 	         worldIn.explode(player, (double)player.getX(), (double)player.getY(), (double)player.getZ(), 5.0F, true, null);
 	       }

@@ -144,7 +144,7 @@ public class ModBlocks {
 	public static final DeferredBlock<ModCobbleable> NETHERREND = BLOCKS.register("netherrend", () -> new ModCobbleable(Cobbleable.NETHERREND));
 	
 	
-	@SuppressWarnings("unchecked")
+	
 	public static void RegisterBlockItems() {
 		
 	
@@ -153,7 +153,7 @@ public class ModBlocks {
 		
 		for (int x = 0; x < blockCount; x++) {
 		
-			ModItems.ITEMS.registerSimpleBlockItem((Holder<Block>) blocks[x]);
+			ModItems.ITEMS.registerSimpleBlockItem((DeferredBlock<?>) blocks[x]);
 			//ModItems.ITEMS.registerB
 				
 			

@@ -18,7 +18,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
 	
-		public static ArrayList<BlockItem> blockItems = new ArrayList<>();
+	 public static ArrayList<BlockItem> blockItems = new ArrayList<>();
 	
 	  public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Dimtech.MODID);
 	  
