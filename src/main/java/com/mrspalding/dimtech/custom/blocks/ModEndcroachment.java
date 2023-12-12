@@ -60,7 +60,7 @@ public class ModEndcroachment extends Block{
 		if (shouldSpread) {
 
 			
-			BlockPos target_pos = ModHelpers.getRandomAdjacentFaceBlock(pos);
+			BlockPos target_pos = ModHelpers.getRandomAdjacentCompassBlock(pos);
 
 			// if (worldIn.getBlockState(pos).getBlock() == Blocks.NETHERRACK
 			if (ModHelpers.checkBlockTagsAny(worldIn.getBlockState(target_pos).getBlock(), ModTags.Blocks.ENDFECTION_TARGETS)

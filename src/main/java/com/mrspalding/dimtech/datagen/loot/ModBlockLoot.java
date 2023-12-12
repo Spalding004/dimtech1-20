@@ -6,8 +6,6 @@ import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
 import com.mrspalding.dimtech.custom.blocks.ModCobbleable;
 import com.mrspalding.dimtech.custom.blocks.ModOre;
-import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
-
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -19,6 +17,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -49,7 +48,9 @@ public class ModBlockLoot extends BlockLootSubProvider{
 		
 		for (int cobbles = 0; cobbles <ModBlocks.cobbleable.size(); cobbles++) {
 			Block oreBlock = (ModCobbleable) ModBlocks.cobbleable.get(cobbles);
-			this.add(oreBlock, block -> createOreDrop(oreBlock, ((ModCobbleable) oreBlock).getCobble().asItem()));
+			
+			Item toDrop = ((ModCobbleable) oreBlock).getDeferredDrop().asItem();
+			this.add(oreBlock, block -> createOreDrop(oreBlock, toDrop));
 		}
 		
 		for (int ores = 0; ores < ModBlocks.ore.size(); ores++) {

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "dimtech:block/umber_smooth",
+    "side": "dimtech:block/umber_smooth",
+    "top": "dimtech:block/umber_smooth"
+  }
+}

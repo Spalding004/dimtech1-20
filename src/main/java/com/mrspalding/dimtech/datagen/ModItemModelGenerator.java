@@ -3,11 +3,6 @@ package com.mrspalding.dimtech.datagen;
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
-import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
-import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
-import com.mrspalding.dimtech.custom.blocks.ModWallStone;
-import com.mrspalding.dimtech.datagen.helpers.WallMap;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -66,8 +61,22 @@ public class ModItemModelGenerator extends ItemModelProvider{
 			wallItem(ModBlocks.POLISHED_UMBER_WALL, ModBlocks.UMBER_SMOOTH);
 			evenSimplerBlockItem(ModBlocks.POLISHED_UMBER_SLAB);
 			evenSimplerBlockItem(ModBlocks.POLISHED_UMBER_STAIRS);
+			
+			wallItem(ModBlocks.NETHERREND_BRICK_WALL, ModBlocks.NETHERREND_BRICKS);
+			evenSimplerBlockItem(ModBlocks.NETHERREND_BRICK_SLAB);
+			evenSimplerBlockItem(ModBlocks.NETHERREND_BRICK_STAIRS);
+			
+			wallItem(ModBlocks.VOIDSTONE_BRICK_WALL, ModBlocks.VOIDSTONE_BRICKS);
+			evenSimplerBlockItem(ModBlocks.VOIDSTONE_BRICK_SLAB);
+			evenSimplerBlockItem(ModBlocks.VOIDSTONE_BRICK_STAIRS);
 		
-		
+			wallItem(ModBlocks.NETHERSTONE_BRICK_WALL, ModBlocks.NETHERSTONE_BRICKS);
+			evenSimplerBlockItem(ModBlocks.NETHERSTONE_BRICK_SLAB);
+			evenSimplerBlockItem(ModBlocks.NETHERSTONE_BRICK_STAIRS);
+			
+			wallItem(ModBlocks.SOILSTONE_BRICK_WALL, ModBlocks.SOILSTONE_BRICKS);
+			evenSimplerBlockItem(ModBlocks.SOILSTONE_BRICK_SLAB);
+			evenSimplerBlockItem(ModBlocks.SOILSTONE_BRICK_STAIRS);
 		
 	}
 	

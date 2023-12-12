@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dimtech:block/mixed_stone",
+    "side": "dimtech:block/mixed_stone",
+    "top": "dimtech:block/mixed_stone"
+  }
+}

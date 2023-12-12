@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:smelting/vironium_ingot_from_vironium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vironium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:vironium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vironium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:smelting/vironium_ingot_from_vironium_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

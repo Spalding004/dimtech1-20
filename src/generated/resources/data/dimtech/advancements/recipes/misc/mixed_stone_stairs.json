@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:mixed_stone_stairs"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

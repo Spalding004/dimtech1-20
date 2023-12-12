@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:polished_cormalite_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

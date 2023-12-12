@@ -1,0 +1,6 @@
+{
+  "message_id": "generic",
+  "exhaustion": 0,
+  "scaling": "always",
+  "death_message_type": "default"
+}

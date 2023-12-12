@@ -11,14 +11,9 @@ import com.mrspalding.dimtech.custom.blocks.ModFabric;
 import com.mrspalding.dimtech.custom.blocks.ModOre;
 import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
 import com.mrspalding.dimtech.custom.blocks.ModStone;
+import com.mrspalding.dimtech.custom.blocks.ModStoneBricks;
 import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
 import com.mrspalding.dimtech.custom.blocks.ModWallStone;
-import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
-import com.mrspalding.dimtech.datagen.helpers.SlabMap;
-import com.mrspalding.dimtech.datagen.helpers.StairMap;
-import com.mrspalding.dimtech.datagen.helpers.WallMap;
-
-import net.minecraft.core.Holder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -32,6 +27,7 @@ public class ModBlocks {
 	public static ArrayList<Block> vanilla_dropping_ore = new ArrayList<>();
 	public static ArrayList<Block> stones = new ArrayList<>();
 	public static ArrayList<Block> cobbleable = new ArrayList<>();
+	
 	
 	public static ArrayList<Block> tool_any = new ArrayList<>();
 	public static ArrayList<Block> tool_stone = new ArrayList<>();
@@ -53,6 +49,8 @@ public class ModBlocks {
 	public static ArrayList<Block> buttons = new ArrayList<>();
 	public static ArrayList<Block> doors = new ArrayList<>();
 	
+	public static ArrayList<Block> bricks = new ArrayList<>();
+	
 	public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Dimtech.MODID);
 	
 	//stones (and bowls)
@@ -72,16 +70,30 @@ public class ModBlocks {
 	
 	public static final DeferredBlock<ModStone> PUMICE = BLOCKS.register("pumice", () -> new ModStone("pumice"));
 	
-	public static final DeferredBlock<ModCobbleable> VOIDSTONE = BLOCKS.register("voidstone", () -> new ModCobbleable(Cobbleable.VOIDSTONE));
 	public static final DeferredBlock<ModStone> VOIDSTONE_COBBLE = BLOCKS.register("voidstone_cobble", () -> new ModStone());
+	public static final DeferredBlock<ModCobbleable> VOIDSTONE = BLOCKS.register("voidstone", () -> new ModCobbleable(VOIDSTONE_COBBLE));
+	
+	public static final DeferredBlock<ModStoneBricks> VOIDSTONE_BRICKS = BLOCKS.register("voidstone_bricks", () -> new ModStoneBricks(VOIDSTONE));
 	
 	public static final DeferredBlock<ModStone> MIXED_STONE = BLOCKS.register("mixed_stone", () -> new ModStone());
+	
+	public static final DeferredBlock<ModStone> SOILSTONE_COBBLE = BLOCKS.register("soilstone_cobble", () -> new ModStone());
+	public static final DeferredBlock<ModCobbleable> SOILSTONE = BLOCKS.register("soilstone", () -> new ModCobbleable(SOILSTONE_COBBLE));
+	public static final DeferredBlock<ModStoneBricks> SOILSTONE_BRICKS = BLOCKS.register("soilstone_brick", () -> new ModStoneBricks(SOILSTONE));
 	
 	//walls, stairs, slabs
 	public static final DeferredBlock<ModWallStone> POLISHED_MARCASITE_WALL = BLOCKS.register("polished_marcasite_wall", () -> new ModWallStone(MARCASITE_SMOOTH));
 	public static final DeferredBlock<ModStoneStairs> POLISHED_MARCASITE_STAIRS = BLOCKS.register("polished_marcasite_stairs", () -> new ModStoneStairs(ModBlocks.MARCASITE_SMOOTH));
 	public static final DeferredBlock<ModSlabStone> POLISHED_MARCASITE_SLAB = BLOCKS.register("polished_marcasite_slab", () -> new ModSlabStone(MARCASITE_SMOOTH));
-		
+	
+	public static final DeferredBlock<ModWallStone> VOIDSTONE_BRICK_WALL = BLOCKS.register("voidstone_brick_wall", () -> new ModWallStone(VOIDSTONE_BRICKS));
+	public static final DeferredBlock<ModStoneStairs> VOIDSTONE_BRICK_STAIRS = BLOCKS.register("voidstone_brick_stairs", () -> new ModStoneStairs(VOIDSTONE_BRICKS));
+	public static final DeferredBlock<ModSlabStone> VOIDSTONE_BRICK_SLAB = BLOCKS.register("voidstone_brick_slab", () -> new ModSlabStone(VOIDSTONE_BRICKS));
+	
+	public static final DeferredBlock<ModWallStone> SOILSTONE_BRICK_WALL = BLOCKS.register("soilstone_brick_wall", () -> new ModWallStone(SOILSTONE_BRICKS));
+	public static final DeferredBlock<ModStoneStairs> SOILSTONE_BRICK_STAIRS = BLOCKS.register("soilstone_brick_stairs", () -> new ModStoneStairs(SOILSTONE_BRICKS));
+	public static final DeferredBlock<ModSlabStone> SOILSTONE_BRICK_SLAB = BLOCKS.register("soilstone_brick_slab", () -> new ModSlabStone(SOILSTONE_BRICKS));
+	
 	
 	public static final DeferredBlock<ModWallStone> POLISHED_APATITE_WALL = BLOCKS.register("polished_apatite_wall", () -> new ModWallStone(APATITE_SMOOTH));
 	public static final DeferredBlock<ModStoneStairs> POLISHED_APATITE_STAIRS = BLOCKS.register("polished_apatite_stairs", () -> new ModStoneStairs(ModBlocks.APATITE_SMOOTH));
@@ -133,6 +145,7 @@ public class ModBlocks {
 	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_B = BLOCKS.register("endfected_netherrack_b", () -> new ModEndfection("B"));
 	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_C = BLOCKS.register("endfected_netherrack_c", () -> new ModEndfection("C"));
 	public static final DeferredBlock<ModEndfection> ENDFECTED_OBSIDIAN = BLOCKS.register("endfected_obsidian", () -> new ModEndfection("O"));
+	public static final DeferredBlock<ModOre> ENDFECTED_NETHER_QUARTZ_ORE = BLOCKS.register("endfected_nether_quartz_ore", () -> new ModOre(1, Items.NETHER_QUARTZ_ORE));
 	
 	//non-stones, non-machines
 	public static final DeferredBlock<ModFabric> WOVEN_LEATHER = BLOCKS.register("woven_leather", () -> new ModFabric());
@@ -140,9 +153,20 @@ public class ModBlocks {
 	
 	//dimensional outputs
 	public static final DeferredBlock<ModStone> COBBLERACK = BLOCKS.register("cobblerack", () -> new ModStone());
-	public static final DeferredBlock<ModStone> COBBLED_NETHERREND = BLOCKS.register("cobbled_netherrend", () -> new ModStone());
-	public static final DeferredBlock<ModCobbleable> NETHERREND = BLOCKS.register("netherrend", () -> new ModCobbleable(Cobbleable.NETHERREND));
+	public static final DeferredBlock<ModCobbleable> NETHERSTONE = BLOCKS.register("netherstone", () -> new ModCobbleable(COBBLERACK));
+	public static final DeferredBlock<ModStoneBricks> NETHERSTONE_BRICKS = BLOCKS.register("netherstone_bricks", () -> new ModStoneBricks(NETHERSTONE));
 	
+	public static final DeferredBlock<ModStone> COBBLED_NETHERREND = BLOCKS.register("cobbled_netherrend", () -> new ModStone());
+	public static final DeferredBlock<ModCobbleable> NETHERREND = BLOCKS.register("netherrend", () -> new ModCobbleable(COBBLED_NETHERREND));
+	public static final DeferredBlock<ModStoneBricks> NETHERREND_BRICKS = BLOCKS.register("netherrend_bricks", () -> new ModStoneBricks(NETHERREND));
+	
+	public static final DeferredBlock<ModWallStone> NETHERREND_BRICK_WALL = BLOCKS.register("netherrend_brick_wall", () -> new ModWallStone(NETHERREND_BRICKS));
+	public static final DeferredBlock<ModStoneStairs> NETHERREND_BRICK_STAIRS = BLOCKS.register("netherrend_brick_stairs", () -> new ModStoneStairs(NETHERREND_BRICKS));
+	public static final DeferredBlock<ModSlabStone> NETHERREND_BRICK_SLAB = BLOCKS.register("netherrend_brick_slab", () -> new ModSlabStone(NETHERREND_BRICKS));
+	
+	public static final DeferredBlock<ModWallStone> NETHERSTONE_BRICK_WALL = BLOCKS.register("netherstone_brick_wall", () -> new ModWallStone(NETHERSTONE_BRICKS));
+	public static final DeferredBlock<ModStoneStairs> NETHERSTONE_BRICK_STAIRS = BLOCKS.register("netherstone_brick_stairs", () -> new ModStoneStairs(NETHERSTONE_BRICKS));
+	public static final DeferredBlock<ModSlabStone> NETHERSTONE_BRICK_SLAB = BLOCKS.register("netherstone_brick_slab", () -> new ModSlabStone(NETHERSTONE_BRICKS));
 	
 	
 	public static void RegisterBlockItems() {

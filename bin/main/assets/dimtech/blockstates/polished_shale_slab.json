@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/polished_shale_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/shale_smooth"
+    },
+    "type=top": {
+      "model": "dimtech:block/polished_shale_slab_top"
+    }
+  }
+}

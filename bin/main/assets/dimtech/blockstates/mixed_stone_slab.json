@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/mixed_stone_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/mixed_stone"
+    },
+    "type=top": {
+      "model": "dimtech:block/mixed_stone_slab_top"
+    }
+  }
+}

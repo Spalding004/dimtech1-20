@@ -154,6 +154,52 @@ public class ModHelpers {
 		return pos;
 	}
 	
+	public static BlockPos getRandomAdjacentCompassBlock(BlockPos pos) {
+		Random rand = new Random();
+		
+		
+		int checkCompass = rand.nextInt(10);
+		switch (checkCompass) {
+		case 0: 
+			pos = pos.east();
+			break;
+		case 1: 
+			pos = pos.north();
+			break;
+		case 2: 
+			pos = pos.west();
+			break;
+		case 3: 
+			pos = pos.south();
+			break;
+		
+		case 4: 
+			pos = pos.above();
+			break;
+		case 5: 
+			pos = pos.below();
+			break;
+		case 6: 
+			pos = pos.east().north();
+			break;
+		case 7: 
+			pos = pos.north().west();
+			break;
+		case 8: 
+			pos = pos.west().south();
+			break;
+		case 9: 
+			pos = pos.south().east();
+			break;
+		
+		
+		
+		default:
+			
+		}
+		return pos;
+	}
+	
 	
 	  public static int getGroundFromAboveGrass(ServerLevel world, int x, int z) {
           int y = 255;

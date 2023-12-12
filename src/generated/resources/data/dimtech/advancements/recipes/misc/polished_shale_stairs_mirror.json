@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:polished_shale_stairs_mirror"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

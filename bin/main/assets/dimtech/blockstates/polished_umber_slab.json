@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/polished_umber_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/umber_smooth"
+    },
+    "type=top": {
+      "model": "dimtech:block/polished_umber_slab_top"
+    }
+  }
+}

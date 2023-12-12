@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:voidstone_brick_stairs_mirror"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidstone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:voidstone_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_voidstone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:voidstone_brick_stairs_mirror"
+    ]
+  }
+}

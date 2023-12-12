@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:smelting/geldar_ingot_from_geldar_ore"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

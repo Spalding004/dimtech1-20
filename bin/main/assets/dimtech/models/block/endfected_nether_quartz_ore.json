@@ -1,7 +1,0 @@
-{
-
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "dimtech:block/endfected_nether_quartz_ore"
-    }
-}

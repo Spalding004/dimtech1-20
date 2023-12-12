@@ -8,17 +8,10 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
-import com.mrspalding.dimtech.datagen.helpers.BlockToBlock;
-import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
-import com.mrspalding.dimtech.datagen.helpers.SlabMap;
-import com.mrspalding.dimtech.datagen.helpers.StairMap;
-import com.mrspalding.dimtech.datagen.helpers.WallMap;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -38,10 +31,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class Dimtech
 {
 	
-	public static ArrayList<Cobbleable> COBBLEABLE = new ArrayList<>();
-	public static ArrayList<StairMap> STAIRMAPS = new ArrayList<>();
-	public static ArrayList<WallMap> WALLMAPS = new ArrayList<>();
-	public static ArrayList<SlabMap> SLABMAPS = new ArrayList<>();
+	
+
    
     public static final String MODID = "dimtech";
  

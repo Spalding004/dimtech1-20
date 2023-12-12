@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/soilstone_brick_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/soilstone_brick"
+    },
+    "type=top": {
+      "model": "dimtech:block/soilstone_brick_slab_top"
+    }
+  }
+}

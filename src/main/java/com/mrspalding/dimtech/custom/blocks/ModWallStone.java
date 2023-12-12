@@ -1,8 +1,6 @@
 package com.mrspalding.dimtech.custom.blocks;
 
 import com.mrspalding.dimtech.custom.ModBlocks;
-import com.mrspalding.dimtech.datagen.helpers.WallMap;
-
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dimtech:block/polished_cormalite_slab"
+    },
+    "type=double": {
+      "model": "dimtech:block/cormalite_smooth"
+    },
+    "type=top": {
+      "model": "dimtech:block/polished_cormalite_slab_top"
+    }
+  }
+}

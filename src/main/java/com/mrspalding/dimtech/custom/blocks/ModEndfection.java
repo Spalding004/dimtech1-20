@@ -76,7 +76,7 @@ private String type;
 		//	if (lives > 0) System.out.println("I have " + lives + " lives left!");
 			int spread_check = rand.nextInt(10);
 			
-			BlockPos target_pos = ModHelpers.getRandomAdjacentFaceBlock(pos);
+			BlockPos target_pos = ModHelpers.getRandomAdjacentCompassBlock(pos);
 			//System.out.println("The block I checked was " + worldIn.getBlockState(pos).getBlock());
 			if (spread_check < 5 ) {
 			
@@ -84,22 +84,23 @@ private String type;
 					
 					if (worldIn.getBlockState(target_pos).getBlock() == Blocks.OBSIDIAN) {
 						worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDFECTED_OBSIDIAN.get().defaultBlockState());
-					} else {
+					} else if (worldIn.getBlockState(target_pos).getBlock() == Blocks.NETHER_QUARTZ_ORE) {
+						
+						worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDFECTED_NETHER_QUARTZ_ORE.get().defaultBlockState());
+						
+					} else{
 						worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDCROACHED_NETHERRACK.get().defaultBlockState());
 						
 					}
 					
 				}
 			
-				if (worldIn.getBlockState(target_pos).getBlock() == Blocks.NETHER_QUARTZ_ORE) {
 				
-					//worldIn.setBlockState(target_pos, ModBlocks.ENDFECTED_NETHER_QUARTZ_ORE.get().getDefaultState());
-					
 				}
 				
 			}
 			
-		}
+
 		
 		@Override
 		   public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {

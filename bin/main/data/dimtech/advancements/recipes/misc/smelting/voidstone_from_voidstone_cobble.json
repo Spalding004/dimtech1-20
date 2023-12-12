@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:smelting/voidstone_from_voidstone_cobble"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidstone_cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:voidstone_cobble"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_voidstone_cobble"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:smelting/voidstone_from_voidstone_cobble"
+    ]
+  },
+  "sends_telemetry_event": false
+}

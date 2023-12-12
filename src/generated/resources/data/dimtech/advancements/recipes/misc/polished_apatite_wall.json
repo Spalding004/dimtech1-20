@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:polished_apatite_wall"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

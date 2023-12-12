@@ -5,8 +5,6 @@ import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
 import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
 import com.mrspalding.dimtech.custom.blocks.ModWallStone;
-import com.mrspalding.dimtech.datagen.helpers.WallMap;
-
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
@@ -34,6 +32,26 @@ public class ModBlockstateProvider extends BlockStateProvider{
 		wallBlock((WallBlock) ModBlocks.POLISHED_APATITE_WALL.get(), blockTexture(ModBlocks.APATITE_SMOOTH.get()));
 		slabBlock(ModBlocks.POLISHED_APATITE_SLAB.get(), blockTexture(ModBlocks.APATITE_SMOOTH.get()),
 				   blockTexture(ModBlocks.APATITE_SMOOTH.get()));
+		
+		stairsBlock(ModBlocks.NETHERREND_BRICK_STAIRS.get(), blockTexture(ModBlocks.NETHERREND_BRICKS.get()));
+		wallBlock((WallBlock) ModBlocks.NETHERREND_BRICK_WALL.get(), blockTexture(ModBlocks.NETHERREND_BRICKS.get()));
+		slabBlock(ModBlocks.NETHERREND_BRICK_SLAB.get(), blockTexture(ModBlocks.NETHERREND_BRICKS.get()),
+				   blockTexture(ModBlocks.NETHERREND_BRICKS.get()));
+		
+		stairsBlock(ModBlocks.VOIDSTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.VOIDSTONE_BRICKS.get()));
+		wallBlock((WallBlock) ModBlocks.VOIDSTONE_BRICK_WALL.get(), blockTexture(ModBlocks.VOIDSTONE_BRICKS.get()));
+		slabBlock(ModBlocks.VOIDSTONE_BRICK_SLAB.get(), blockTexture(ModBlocks.VOIDSTONE_BRICKS.get()),
+				   blockTexture(ModBlocks.VOIDSTONE_BRICKS.get()));
+			
+		stairsBlock(ModBlocks.NETHERSTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.NETHERSTONE_BRICKS.get()));
+		wallBlock((WallBlock) ModBlocks.NETHERSTONE_BRICK_WALL.get(), blockTexture(ModBlocks.NETHERSTONE_BRICKS.get()));
+		slabBlock(ModBlocks.NETHERSTONE_BRICK_SLAB.get(), blockTexture(ModBlocks.NETHERSTONE_BRICKS.get()),
+				   blockTexture(ModBlocks.NETHERSTONE_BRICKS.get()));
+		
+		stairsBlock(ModBlocks.SOILSTONE_BRICK_STAIRS.get(), blockTexture(ModBlocks.SOILSTONE_BRICKS.get()));
+		wallBlock((WallBlock) ModBlocks.SOILSTONE_BRICK_WALL.get(), blockTexture(ModBlocks.SOILSTONE_BRICKS.get()));
+		slabBlock(ModBlocks.SOILSTONE_BRICK_SLAB.get(), blockTexture(ModBlocks.SOILSTONE_BRICKS.get()),
+				   blockTexture(ModBlocks.SOILSTONE_BRICKS.get()));
 		
 		
 		stairsBlock(ModBlocks.POLISHED_MARCASITE_STAIRS.get(), blockTexture(ModBlocks.MARCASITE_SMOOTH.get()));

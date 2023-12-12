@@ -1,18 +1,18 @@
 package com.mrspalding.dimtech.datagen;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
 
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
+import com.mrspalding.dimtech.custom.blocks.ModCobbleable;
+import com.mrspalding.dimtech.custom.blocks.ModOre;
 import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
+import com.mrspalding.dimtech.custom.blocks.ModStoneBricks;
 import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
 import com.mrspalding.dimtech.custom.blocks.ModWallStone;
-import com.mrspalding.dimtech.datagen.helpers.BlockToBlock;
-import com.mrspalding.dimtech.datagen.helpers.WallMap;
-
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -22,7 +22,9 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder{
 
@@ -53,7 +55,7 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 				
 				ItemLike input = searchlist.get(i);
 				ItemLike result = searchlist.get(0);
-				System.out.println(input);
+				
 				SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 200).unlockedBy(getHasName(input), has(input)).save(recipe,
 						Dimtech.makeId("smelting/" + getItemName(result) + "_from_" + getItemName(input)));
 				SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 100).unlockedBy(getHasName(input), has(input)).save(recipe,
@@ -61,7 +63,21 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 		
 				}
 			}
-	
+		
+		for (int cobbles = 0; cobbles <ModBlocks.cobbleable.size(); cobbles++) {
+			ItemLike result = (ModCobbleable) ModBlocks.cobbleable.get(cobbles);
+			
+			ItemLike input = ((ModCobbleable) result).getDeferredDrop();
+			
+			//System.out.println(ModBlocks.cobbleable);
+			
+			SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 200).unlockedBy(getHasName(input), has(input)).save(recipe,
+					Dimtech.makeId("smelting/" + getItemName(result) + "_from_" + getItemName(input)));
+			
+		}
+		
+		
+		
 		
 		for (int x = 0; x < ModBlocks.walls.size(); x++) {
 			
@@ -69,6 +85,15 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 			ItemLike output = 	ModBlocks.walls.get(x);
 			
 			wallRecipe(input, output, recipe);
+			
+		}
+		
+		for (int x = 0; x < ModBlocks.bricks.size(); x++) {
+			
+			ItemLike input =  ((ModStoneBricks) ModBlocks.bricks.get(x)).getInput();
+			ItemLike output = 	ModBlocks.bricks.get(x);
+			
+			x2Recipe(input, output, recipe);
 			
 		}
 		
@@ -101,6 +126,19 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 6)
 		.pattern("SSS")
 		.pattern("SSS")
+		.define('S', input)
+		.unlockedBy(getHasName(input), has(input))
+		.save(recipe, Dimtech.makeId(getItemName(output)));
+		
+		
+	}
+	
+	private void x2Recipe(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 4)
+		.pattern("SS")
+		.pattern("SS")
 		.define('S', input)
 		.unlockedBy(getHasName(input), has(input))
 		.save(recipe, Dimtech.makeId(getItemName(output)));
