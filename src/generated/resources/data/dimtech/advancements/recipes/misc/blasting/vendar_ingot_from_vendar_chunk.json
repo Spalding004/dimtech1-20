@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:blasting/vendar_ingot_from_vendar_chunk"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vendar_chunk": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:vendar_chunk"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vendar_chunk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:blasting/vendar_ingot_from_vendar_chunk"
+    ]
+  },
+  "sends_telemetry_event": false
+}

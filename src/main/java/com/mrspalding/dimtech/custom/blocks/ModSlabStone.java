@@ -9,14 +9,15 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModSlabStone extends SlabBlock{
 
+	private DeferredBlock input;
 	
-	public ModSlabStone() {
+	public ModSlabStone(DeferredBlock input) {
 		super(BlockBehaviour.Properties
 				.of()
 				.strength(1.5F, 6F)
 				.requiresCorrectToolForDrops()
 				);
-				
+				this.input = input;
 		
 		ModBlocks.pickaxe.add(this);
 		ModBlocks.stones.add(this);
@@ -27,5 +28,11 @@ public class ModSlabStone extends SlabBlock{
 		
 	}
 	
+	public DeferredBlock getInput() {
+		return input;
+		
+		
+		
+	}
 	
 }

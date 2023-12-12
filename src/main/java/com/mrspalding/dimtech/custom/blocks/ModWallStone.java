@@ -10,24 +10,26 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModWallStone extends WallBlock{
 
+	private DeferredBlock inputBlock;
 	
-	
-	public ModWallStone() {
+	public ModWallStone(DeferredBlock input) {
 		super(BlockBehaviour.Properties
 				.of()
 				.strength(1.5F, 6F)
 				.requiresCorrectToolForDrops()
 				);
 				
-
+		this.inputBlock = input;
 		
 		ModBlocks.pickaxe.add(this);
 		ModBlocks.stones.add(this);
+		ModBlocks.walls.add(this);
 		
-		if (!ModBlocks.walls.contains(this))
-			ModBlocks.walls.add(this);
-		System.out.println(ModBlocks.walls.size());
 		
+	}
+	
+	public DeferredBlock getInput() {
+		return this.inputBlock;
 	}
 	
 	

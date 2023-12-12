@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_indirium_chunk": {
+    "has_alunite_smooth": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dimtech:indirium_chunk"
+              "dimtech:alunite_smooth"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dimtech:indirium_ingot_from_blasting_indirium_chunk"
+        "recipe": "dimtech:polished_alunite_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_indirium_chunk"
+      "has_alunite_smooth"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dimtech:indirium_ingot_from_blasting_indirium_chunk"
+      "dimtech:polished_alunite_wall"
     ]
   },
   "sends_telemetry_event": false

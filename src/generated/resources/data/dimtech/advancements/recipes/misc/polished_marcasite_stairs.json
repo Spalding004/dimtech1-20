@@ -1,34 +1,34 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "dimtech:vendar_ingot_from_blasting_vendar_ore"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_vendar_ore": {
+    "has_marcasite_smooth": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dimtech:vendar_ore"
+              "dimtech:marcasite_smooth"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:polished_marcasite_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_vendar_ore"
+      "has_marcasite_smooth"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dimtech:vendar_ingot_from_blasting_vendar_ore"
+      "dimtech:polished_marcasite_stairs"
     ]
   },
   "sends_telemetry_event": false

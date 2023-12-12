@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cormalite_smooth": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:cormalite_smooth"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:polished_cormalite_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cormalite_smooth"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:polished_cormalite_slab"
+    ]
+  },
+  "sends_telemetry_event": false
+}

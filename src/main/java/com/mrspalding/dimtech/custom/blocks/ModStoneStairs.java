@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 @SuppressWarnings("unchecked")
 public class ModStoneStairs extends StairBlock{
 
-
+	private DeferredBlock inputBlock;
 	
 	
 	@SuppressWarnings("deprecation")
@@ -24,7 +24,7 @@ public class ModStoneStairs extends StairBlock{
 		.requiresCorrectToolForDrops()
 		);
 				
-		
+		this.inputBlock = block;
 		
 		ModBlocks.pickaxe.add(this);
 		ModBlocks.stones.add(this);
@@ -32,6 +32,8 @@ public class ModStoneStairs extends StairBlock{
 		ModBlocks.stairs.add(this);
 	}
 	
-	
+	public DeferredBlock getInput() {
+		return this.inputBlock;
+	}
 	
 }

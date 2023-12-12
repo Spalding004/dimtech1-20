@@ -3,16 +3,16 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dimtech:vendar_ingot_from_smelting_vendar_ore"
+        "recipe": "dimtech:smelting/vironium_ingot_from_vironium_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_vendar_ore": {
+    "has_vironium_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dimtech:vendar_ore"
+              "dimtech:vironium_ore"
             ]
           }
         ]
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_vendar_ore"
+      "has_vironium_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dimtech:vendar_ingot_from_smelting_vendar_ore"
+      "dimtech:smelting/vironium_ingot_from_vironium_ore"
     ]
   },
   "sends_telemetry_event": false

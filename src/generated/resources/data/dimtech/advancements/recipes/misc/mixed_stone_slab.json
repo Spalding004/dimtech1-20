@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_indirium_chunk": {
+    "has_mixed_stone": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dimtech:indirium_chunk"
+              "dimtech:mixed_stone"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dimtech:indirium_ingot_from_smelting_indirium_chunk"
+        "recipe": "dimtech:mixed_stone_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_indirium_chunk"
+      "has_mixed_stone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dimtech:indirium_ingot_from_smelting_indirium_chunk"
+      "dimtech:mixed_stone_slab"
     ]
   },
   "sends_telemetry_event": false

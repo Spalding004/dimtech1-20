@@ -1,16 +1,24 @@
 package com.mrspalding.dimtech.datagen;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
+import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
+import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
+import com.mrspalding.dimtech.custom.blocks.ModWallStone;
+import com.mrspalding.dimtech.datagen.helpers.BlockToBlock;
+import com.mrspalding.dimtech.datagen.helpers.WallMap;
+
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -25,10 +33,16 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 	
 	private static final List<ItemLike> VENDAR = List.of(ModItems.VENDAR_INGOT.get(), ModBlocks.VENDAR_ORE, ModItems.VENDAR_CHUNK.get());
 	private static final List<ItemLike> INDIRIUM = List.of(ModItems.INDIRIUM_INGOT.get(), ModItems.INDIRIUM_CHUNK.get());
-//	private static final List<ItemLike> GELDAR = List.of(ModBlocks.GELDAR_ORE.get(), ModItems.GELDAR_CHUNK.get());
-//	private static final List<ItemLike> VIRONIUM = List.of(ModBlocks.VIRONIUM_ORE.get(), ModItems.VIRONIUM_CHUNK.get());
+	private static final List<ItemLike> GELDAR = List.of(ModItems.GELDAR_INGOT.get(),ModBlocks.GELDAR_ORE.get(), ModItems.GELDAR_CHUNK.get());
+	private static final List<ItemLike> VIRONIUM = List.of(ModItems.VIRONIUM_INGOT.get(),ModBlocks.VIRONIUM_ORE.get(), ModItems.VIRONIUM_CHUNK.get());
 
-	private static final List<List<ItemLike>> SMELTABLES = List.of(VENDAR, INDIRIUM);
+	private static final List<List<ItemLike>> SMELTABLES = List.of(VENDAR, INDIRIUM, GELDAR, VIRONIUM);
+	
+	
+	
+	
+	
+	
 	
 	@Override
 	protected void buildRecipes(RecipeOutput recipe) {
@@ -39,42 +53,100 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 				
 				ItemLike input = searchlist.get(i);
 				ItemLike result = searchlist.get(0);
-			
-				SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 200).unlockedBy(getHasName(input), has(input)).save(recipe, "smelting/" +Dimtech.MODID + ":" + getItemName(result) + "_from_smelting_" + getItemName(input));;
-				SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 100).unlockedBy(getHasName(input), has(input)).save(recipe, "blasting/" +Dimtech.MODID + ":" + getItemName(result) + "_from_blasting_" + getItemName(input));;
-;
+				System.out.println(input);
+				SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 200).unlockedBy(getHasName(input), has(input)).save(recipe,
+						Dimtech.makeId("smelting/" + getItemName(result) + "_from_" + getItemName(input)));
+				SimpleCookingRecipeBuilder.blasting(Ingredient.of(input), RecipeCategory.MISC, result, .25f, 100).unlockedBy(getHasName(input), has(input)).save(recipe,
+						Dimtech.makeId("blasting/" + getItemName(result) + "_from_" + getItemName(input)));
 		
 				}
 			}
-	///	oreSmelting(recipe, GELDAR, RecipeCategory.MISC, ModItems.GELDAR_INGOT.get(), .25f, 200, "geldar");
-	//	oreBlasting(recipe, GELDAR, RecipeCategory.MISC, ModItems.GELDAR_INGOT.get(), .25f, 100, "geldar");
-	//	
-	//	oreSmelting(recipe, VIRONIUM, RecipeCategory.MISC, ModItems.VIRONIUM_INGOT.get(), .25f, 200, "vironium");
-	//	oreBlasting(recipe, VIRONIUM, RecipeCategory.MISC, ModItems.VIRONIUM_INGOT.get(), .25f, 100, "vironium");
+	
 		
-	//	oreSmelting(recipe, INDIRIUM, RecipeCategory.MISC, ModItems.INDIRIUM_INGOT.get(), .25f, 200, "indirium");
-	//	oreBlasting(recipe, INDIRIUM, RecipeCategory.MISC, ModItems.INDIRIUM_INGOT.get(), .25f, 100, "indirium");
-		/*
-		for (int x = 0; x < Dimtech.WALLMAPS.size(); x++) {
-		Block input =  (Block) WallMap.getBase(Dimtech.WALLMAPS.get(x)).get();
-		Block output = 	(Block) WallMap.getWall(Dimtech.WALLMAPS.get(x)).get();
-			ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 6)
-		.pattern("SSS")
-		.pattern("SSS")
-		.define('S', input)
-		.unlockedBy(getHasName(input), has(input))
-		.save(recipe);
+		for (int x = 0; x < ModBlocks.walls.size(); x++) {
+			
+			ItemLike input =  ((ModWallStone) ModBlocks.walls.get(x)).getInput();
+			ItemLike output = 	ModBlocks.walls.get(x);
+			
+			wallRecipe(input, output, recipe);
+			
 		}
 		
-		Block input =  ModBlocks.ALUNITE_SMOOTH.get();
-		Block output = ModBlocks.POLISHED_ALUNITE_WALL.get();;
-			ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 6)
+		for (int x = 0; x < ModBlocks.stairs.size(); x++) {
+			
+			ItemLike input =  ((ModStoneStairs) ModBlocks.stairs.get(x)).getInput();
+			ItemLike output = 	ModBlocks.stairs.get(x);
+			
+			stairRecipe(input, output, recipe);
+			
+		}
+		
+		for (int x = 0; x < ModBlocks.slabs.size(); x++) {
+			
+			ItemLike input =  ((ModSlabStone) ModBlocks.slabs.get(x)).getInput();
+			ItemLike output = 	ModBlocks.slabs.get(x);
+			
+			slabRecipe(input, output, recipe);
+			
+		}
+		
+		
+		
+		
+	}
+	
+	private void wallRecipe(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 6)
 		.pattern("SSS")
 		.pattern("SSS")
 		.define('S', input)
 		.unlockedBy(getHasName(input), has(input))
-		.save(recipe);
-		*/
+		.save(recipe, Dimtech.makeId(getItemName(output)));
+		
+		
+	}
+	
+	private void slabRecipe(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 6)
+		
+		.pattern("SSS")
+		.define('S', input)
+		.unlockedBy(getHasName(input), has(input))
+		.save(recipe, Dimtech.makeId(getItemName(output)));
+		
+		
+	}
+	
+	private void stairRecipe(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 4)
+		.pattern("S  ")
+		.pattern("SS ")
+		.pattern("SSS")
+		.define('S', input)
+		.unlockedBy(getHasName(input), has(input))
+		.save(recipe, Dimtech.makeId(getItemName(output)));
+		stairRecipeMirror(input, output, recipe);
+		
+	}
+	
+	private void stairRecipeMirror(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 4)
+		.pattern("  S")
+		.pattern(" SS")
+		.pattern("SSS")
+		.define('S', input)
+		.unlockedBy(getHasName(input), has(input))
+		.save(recipe, Dimtech.makeId(getItemName(output) + "_mirror"));
+		
+		
 	}
 	
 	

@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
+import com.mrspalding.dimtech.datagen.helpers.BlockToBlock;
 import com.mrspalding.dimtech.datagen.helpers.Cobbleable;
 import com.mrspalding.dimtech.datagen.helpers.SlabMap;
 import com.mrspalding.dimtech.datagen.helpers.StairMap;
@@ -15,6 +16,7 @@ import com.mrspalding.dimtech.datagen.helpers.WallMap;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
@@ -61,7 +63,9 @@ public class Dimtech
       
         ModBlocks.BLOCKS.register(modEventBus);
         ModBlocks.RegisterBlockItems();
+        //BlockToBlock.init();
         ModItems.ITEMS.register(modEventBus);
+       
         
        
         
@@ -83,7 +87,9 @@ public class Dimtech
     }
 
   
-    
+    public static ResourceLocation makeId(String id) {
+        return new ResourceLocation(MODID, id);
+    }
     
     private void commonSetup(final FMLCommonSetupEvent event)
     {
