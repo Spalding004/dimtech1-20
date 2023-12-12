@@ -3,7 +3,6 @@ package com.mrspalding.dimtech.custom.blocks;
 import com.mrspalding.dimtech.custom.ModBlocks;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 

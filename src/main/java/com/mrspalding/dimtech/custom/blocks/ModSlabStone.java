@@ -4,8 +4,9 @@ import com.mrspalding.dimtech.custom.ModBlocks;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
-
+@SuppressWarnings("rawtypes")
 public class ModSlabStone extends SlabBlock{
+
 
 	private DeferredBlock input;
 	

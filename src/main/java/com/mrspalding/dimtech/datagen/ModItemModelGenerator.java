@@ -13,6 +13,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
+@SuppressWarnings("rawtypes")
 public class ModItemModelGenerator extends ItemModelProvider{
 
 	public ModItemModelGenerator(PackOutput output,  ExistingFileHelper existingFileHelper) {
@@ -20,7 +21,6 @@ public class ModItemModelGenerator extends ItemModelProvider{
 	
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	protected void registerModels() {
 		
@@ -80,7 +80,8 @@ public class ModItemModelGenerator extends ItemModelProvider{
 		
 	}
 	
-	 public void evenSimplerBlockItem(DeferredBlock block) {
+
+	public void evenSimplerBlockItem(DeferredBlock block) {
 	        this.withExistingParent(block.getId().getPath(),
 	                modLoc("block/" + block.getId().getPath()));
 	    }

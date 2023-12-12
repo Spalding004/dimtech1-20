@@ -2,13 +2,10 @@ package com.mrspalding.dimtech.datagen;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Future;
-
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
 import com.mrspalding.dimtech.custom.blocks.ModCobbleable;
-import com.mrspalding.dimtech.custom.blocks.ModOre;
 import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
 import com.mrspalding.dimtech.custom.blocks.ModStoneBricks;
 import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
@@ -22,9 +19,7 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
-import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder{
 

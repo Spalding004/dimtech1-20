@@ -2,17 +2,11 @@ package com.mrspalding.dimtech.datagen;
 
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
-import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
-import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
-import com.mrspalding.dimtech.custom.blocks.ModWallStone;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModBlockstateProvider extends BlockStateProvider{
 
