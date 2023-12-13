@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:vironium_ingot_from_vironium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vironium_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:vironium_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vironium_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:vironium_ingot_from_vironium_block"
+    ]
+  }
+}

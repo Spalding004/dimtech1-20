@@ -13,6 +13,7 @@ import com.mrspalding.dimtech.events.lootmodifiers.ModGlobalLootModifiers;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -43,8 +44,9 @@ public class Dimtech
    
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register(MODID +".item_group.creative_tab", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register(MODID, () -> CreativeModeTab.builder()
             .icon(() -> ModItems.VENDAR_INGOT.get().getDefaultInstance())
+            .title(Component.translatable(MODID +".item_group.creative_tab"))
             .displayItems((parameters, output) -> {
             List<ItemStack> items = ModItems.ITEMS.getEntries().stream().map(reg -> new ItemStack(reg.get())).toList();
             output.acceptAll(items);

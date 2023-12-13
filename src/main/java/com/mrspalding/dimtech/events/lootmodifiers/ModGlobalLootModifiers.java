@@ -11,5 +11,6 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public final class ModGlobalLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> GLM = DeferredRegister.create(NeoForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, Dimtech.MODID);
 
-    public static final DeferredHolder<Codec<? extends IGlobalLootModifier>, Codec<OreDropsModifier>> ORE_DROPS_MODIFIER = GLM.register("ore_drops_mofidier", OreDropsModifier.CODEC);
-    }
+    public static final DeferredHolder<Codec<? extends IGlobalLootModifier>, Codec<OreDropsModifier>> ORE_DROPS_MODIFIER = GLM.register("special_drops", OreDropsModifier.CODEC);
+    public static final DeferredHolder<Codec<? extends IGlobalLootModifier>, Codec<ModAddDropsToMob>> CHEVAL_HORSE = GLM.register("add_drops_to_mobs", ModAddDropsToMob.CODEC);
+}

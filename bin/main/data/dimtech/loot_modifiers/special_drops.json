@@ -1,0 +1,10 @@
+{
+  "type": "dimtech:special_drops",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool"
+      
+          
+    }
+  ]
+}

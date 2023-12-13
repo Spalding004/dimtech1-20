@@ -2,20 +2,25 @@ package com.mrspalding.dimtech.datagen;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
 import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
 import com.mrspalding.dimtech.custom.blocks.ModCobbleable;
+import com.mrspalding.dimtech.custom.blocks.ModMetalBlock;
 import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
 import com.mrspalding.dimtech.custom.blocks.ModStoneBricks;
 import com.mrspalding.dimtech.custom.blocks.ModStoneStairs;
 import com.mrspalding.dimtech.custom.blocks.ModWallStone;
+import com.mrspalding.dimtech.custom.items.ModEdible;
+
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -44,6 +49,17 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 	@Override
 	protected void buildRecipes(RecipeOutput recipe) {
 		
+		for (int metals = 0; metals < ModBlocks.metals.size(); metals++) {
+			
+			ItemLike result = ModBlocks.metals.get(metals);
+			ItemLike ingot = ((ModMetalBlock) result).getIngot();
+			
+			x3Recipe(ingot, result, recipe);
+			belch(result, ingot, recipe);
+			
+		}
+		
+		
 		for (int l = 0; l < SMELTABLES.size(); l++) {
 			List<ItemLike> searchlist = SMELTABLES.get(l);
 			for (int i = 1; i < searchlist.size(); i++) {
@@ -58,6 +74,20 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 		
 				}
 			}
+		
+		
+		for (int foods = 0; foods < ModItems.cooked_foods.size(); foods++) {
+			ItemLike cooked = ModItems.cooked_foods.get(foods);
+			ItemLike raw = ((ModEdible) cooked).getRaw();
+			
+			SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(raw), RecipeCategory.MISC, cooked, .15f, 600).unlockedBy(getHasName(raw), has(raw)).save(recipe,
+					Dimtech.makeId("campfire/" + getItemName(cooked) + "_from_" + getItemName(raw)));
+			SimpleCookingRecipeBuilder.smelting(Ingredient.of(raw), RecipeCategory.MISC, cooked, .15f, 200).unlockedBy(getHasName(raw), has(raw)).save(recipe,
+					Dimtech.makeId("cooking/" + getItemName(cooked) + "_from_" + getItemName(raw)));
+			SimpleCookingRecipeBuilder.smoking(Ingredient.of(raw), RecipeCategory.MISC, cooked, .15f, 100).unlockedBy(getHasName(raw), has(raw)).save(recipe,
+					Dimtech.makeId("smoking/" + getItemName(cooked) + "_from_" + getItemName(raw)));
+		}
+		
 		
 		for (int cobbles = 0; cobbles <ModBlocks.cobbleable.size(); cobbles++) {
 			ItemLike result = (ModCobbleable) ModBlocks.cobbleable.get(cobbles);
@@ -178,6 +208,31 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 		.define('S', input)
 		.unlockedBy(getHasName(input), has(input))
 		.save(recipe, Dimtech.makeId(getItemName(output) + "_mirror"));
+		
+		
+	}
+	
+	private void x3Recipe(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, 1)
+		.pattern("SSS")
+		.pattern("SSS")
+		.pattern("SSS")
+		.define('S', input)
+		.unlockedBy(getHasName(input), has(input))
+		.save(recipe, Dimtech.makeId(getItemName(output) + "_from_" + getItemName(input)));
+		
+		
+	}
+	
+	private void belch(ItemLike input, ItemLike output, RecipeOutput recipe) {
+		
+		
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, 9)
+		.requires(Ingredient.of(input))
+		.unlockedBy(getHasName(input), has(input))
+		.save(recipe, Dimtech.makeId(getItemName(output) + "_from_" + getItemName(input)));
 		
 		
 	}

@@ -1,4 +1,4 @@
-// 1.20.4	2023-12-12T14:08:25.0983003	Loot Tables
+// 1.20.4	2023-12-13T17:24:08.3374881	Loot Tables
 0d71c67e2d8285327dfc1cebea4b3c5d79697ea9 data/dimtech/loot_tables/blocks/alunite.json
 aede6ef4c3bac488cea4309bd896a2548438edc2 data/dimtech/loot_tables/blocks/alunite_smooth.json
 f434b292c2de4b377d9ab1c1aadace5220a58372 data/dimtech/loot_tables/blocks/apatite.json
@@ -18,9 +18,11 @@ e5f47ad4b0ec4be6defaafc24d794c4a8d8011d8 data/dimtech/loot_tables/blocks/cormali
 136665659f22ab32fa8bef0da2abe86044147d9d data/dimtech/loot_tables/blocks/endfected_netherrack_a.json
 960022bb17f56367e3807fced74a7af30b2f7d8f data/dimtech/loot_tables/blocks/endfected_netherrack_b.json
 d0bfaa936ba8c251355f975591d9dfbb38c46893 data/dimtech/loot_tables/blocks/endfected_netherrack_c.json
-a27016529de9688519da11e83d46ce41c8094440 data/dimtech/loot_tables/blocks/endfected_nether_quartz_ore.json
+4ca8f4bd615fe184b7cb122e7dc57358d0aa5abe data/dimtech/loot_tables/blocks/endfected_nether_quartz_ore.json
 b0e751638521ee94f9d5bef9fdf81e6f341ba311 data/dimtech/loot_tables/blocks/endfected_obsidian.json
+74b98f1d8cbba4276b95fc4d9697f3a3353fa726 data/dimtech/loot_tables/blocks/geldar_block.json
 57bf5af9cb5df3efd4ada45b73944388521e0001 data/dimtech/loot_tables/blocks/geldar_ore.json
+ea940b23d2eefacbc5608c4871eb7226e6b4570e data/dimtech/loot_tables/blocks/indirium_block.json
 eadf24fddf9d3f659795e7ff60edbc4bd6982bf8 data/dimtech/loot_tables/blocks/indirium_ore.json
 b69a16ef2d1a3aeb56c5307717f09b0b9c54e8db data/dimtech/loot_tables/blocks/marcasite.json
 63a01dca300e6d0c7f30171f1effd6c9dfd798b7 data/dimtech/loot_tables/blocks/marcasite_smooth.json
@@ -56,7 +58,7 @@ ea96977dd8afdb8b70b7302b155464229331ca9b data/dimtech/loot_tables/blocks/polishe
 a643726f72c025dd66884ca37c14a5366e77a9e9 data/dimtech/loot_tables/blocks/polished_umber_slab.json
 6cee9d1c23cc6211cd75fb5b205b40c5453c9548 data/dimtech/loot_tables/blocks/polished_umber_stairs.json
 24275ed7de29d5416210f648745875b4d8b1716a data/dimtech/loot_tables/blocks/polished_umber_wall.json
-cacc8ea6dc43988d72389ce7f62fd9a8382644f1 data/dimtech/loot_tables/blocks/prismarine_ore.json
+1d0ed50aba68ebfbbe0c361a98d8b63cfee2c0b4 data/dimtech/loot_tables/blocks/prismarine_ore.json
 4cb7eb909ae1997eafd792c72a5ea036eadeecb3 data/dimtech/loot_tables/blocks/pumice.json
 a22a853012a16384215dd045f4890b9de6d4e20a data/dimtech/loot_tables/blocks/shale.json
 8130154b3b85877b65938062378c992ad496af4c data/dimtech/loot_tables/blocks/shale_smooth.json
@@ -68,8 +70,10 @@ c09251335ce7e352b9bb29a97bbad139679e5483 data/dimtech/loot_tables/blocks/soilsto
 466212b92550b3d620ffcd335fa2053eefa541d4 data/dimtech/loot_tables/blocks/soilstone_cobble.json
 c235c611b08ad4569d227dcbb912b77a6cfa97fb data/dimtech/loot_tables/blocks/umber.json
 3f9e0414e51bec379699b1aba8cd4a76d156be45 data/dimtech/loot_tables/blocks/umber_smooth.json
+8387b80dce4b13402e7da7d42799dc2743a050c6 data/dimtech/loot_tables/blocks/vendar_block.json
 32eb79e9f25ef17a05ce5b660f3ef0f4a20242a6 data/dimtech/loot_tables/blocks/vendar_ore.json
-91c0b525ff98250f749d6618e8c4f7b474f850b2 data/dimtech/loot_tables/blocks/vendar_ore_dense.json
+2e61f4524629e95b2290521fb1d698812b8e9294 data/dimtech/loot_tables/blocks/vendar_ore_dense.json
+bb5d7a087c27634d878329484f622aa73e0d7656 data/dimtech/loot_tables/blocks/vironium_block.json
 0c599505378fa4230b00d0f7e81264049485ebeb data/dimtech/loot_tables/blocks/vironium_ore.json
 93b64960dae0eb6eeac6c7673c67d2855aa8ed75 data/dimtech/loot_tables/blocks/voidstone.json
 852ac7e80e29387d572c1778a008f6d67b1b2f8b data/dimtech/loot_tables/blocks/voidstone_bricks.json

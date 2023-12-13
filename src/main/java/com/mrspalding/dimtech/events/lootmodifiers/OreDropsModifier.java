@@ -19,6 +19,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -40,6 +41,9 @@ public class OreDropsModifier extends LootModifier {
 	@Override
 	protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot,
 			LootContext context) {
+		
+		
+		
 		@SuppressWarnings("unused")
 		Random random = new Random();
 		String broken = generatedLoot.toString();
@@ -47,7 +51,7 @@ public class OreDropsModifier extends LootModifier {
 		int enchant_level = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, ctxTool);
 		
 		
-		
+		System.out.println(broken);
 		
 		if (generatedLoot.size() == 0) {
 
@@ -118,8 +122,86 @@ public class OreDropsModifier extends LootModifier {
 				
 			}
 			*/
+		
+		
+		
+		
+		if (broken.contains("endcroached")) {
 			
+			int dropChance = random.nextInt(100);
+			listReturn.add(ItemStack.EMPTY);
+			if (dropChance > 50) listReturn.add(new ItemStack(Blocks.NETHERRACK, 1));
+			if (dropChance < 30) listReturn.add(new ItemStack(ModItems.END_ESSENCE.get(), 1));
+			return listReturn;
+			
+			
+		}
+		
 
+		if (broken.contains("endfected_")) {
+			
+			int dropChance = random.nextInt(100);
+			listReturn.add(ItemStack.EMPTY);
+			//we don't want it to ever drop itself so we add minecraft:air via ItemStack.EMPTY.
+			
+			if (broken.contains("netherrack_a")) {
+				if (dropChance > 30) {
+					listReturn.add(new ItemStack(ModItems.END_ESSENCE.get(), 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				
+				if (dropChance > 90) {
+					listReturn.add(new ItemStack(Items.ENDER_PEARL, 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				return listReturn;
+			}
+			
+			if (broken.contains("netherrack_b")) {
+				if (dropChance < 55) {
+					listReturn.add(new ItemStack(ModItems.END_ESSENCE.get(), 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				
+				if (dropChance < 75) {
+					listReturn.add(new ItemStack(Items.ENDER_PEARL, 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				System.out.println(broken);
+				return listReturn;
+			}
+
+			if (broken.contains("netherrack_c")) {
+				if (dropChance > 75) {
+					listReturn.add(new ItemStack(ModItems.END_ESSENCE.get(), 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				
+				if (dropChance > 95) {
+					listReturn.add(new ItemStack(Items.ENDER_PEARL, 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				return listReturn;
+			}
+			
+			if (broken.contains("obsidian")) {
+				if (dropChance > 0) {
+					listReturn.add(new ItemStack(ModItems.END_ESSENCE.get(), 2 + 1 * random.nextInt(1 + enchant)));
+				}
+				
+				if (dropChance > 60) {
+					listReturn.add(new ItemStack(Blocks.OBSIDIAN, 1 + 1 * random.nextInt(1 + enchant)));
+				}
+				return listReturn;
+			}
+			
+			if (broken.contains("nether_quartz_ore")) {
+				if (dropChance > 10) {
+					listReturn.add(new ItemStack(ModItems.END_ESSENCE.get(), 3 + 1 * random.nextInt(1 + enchant)));
+				}
+				
+				
+					listReturn.add(new ItemStack(Items.QUARTZ, 3 + 1 * random.nextInt(1 + enchant)));
+				
+				return listReturn;
+			}
+			
+			
+		}
 		
 		checkedOre = "prismarine";
 		if (broken.contains(checkedOre + "_ore")) {
@@ -137,7 +219,7 @@ public class OreDropsModifier extends LootModifier {
 
 		if (broken.contains("coal") && !broken.contains("coal_ore_")) {
 			listReturn = (ObjectArrayList<ItemStack>) generatedLoot;
-			if (random.nextInt(200 + enchant * 2) >= 198)
+			if (random.nextInt(210 + enchant * 3) >= (198 - enchant * 4))
 				listReturn.add(new ItemStack(ModItems.CHARGED_CARBON.get()));
 
 			return listReturn;

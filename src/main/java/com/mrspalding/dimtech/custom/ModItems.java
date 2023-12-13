@@ -19,6 +19,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
 	
 	 public static ArrayList<BlockItem> blockItems = new ArrayList<>();
+	 public static ArrayList<Item> cooked_foods = new ArrayList<>();
 	
 	  public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Dimtech.MODID);
 	  
@@ -56,8 +57,9 @@ public class ModItems {
 	  public static final DeferredItem<Item> SAWDUST = ITEMS.registerSimpleItem("sawdust");
 	  public static final DeferredItem<Item> WOOD_PULP = ITEMS.registerSimpleItem("wood_pulp");
 	  
-	  public static final DeferredItem<ModEdible> CHEVAL_STEAK = ITEMS.register("cheval_steak", () -> new ModEdible(ModFoods.CHEVAL_STEAK));
+	  
 	  public static final DeferredItem<ModEdible> RAW_CHEVAL = ITEMS.register("raw_cheval", () -> new ModEdible(ModFoods.RAW_CHEVAL));
+	  public static final DeferredItem<ModEdible> CHEVAL_STEAK = ITEMS.register("cheval_steak", () -> new ModEdible(ModFoods.CHEVAL_STEAK, RAW_CHEVAL));
 	  
 	  public static final DeferredItem<ModCard> CARD_BASIC = ITEMS.register("card_basic", () -> new ModCard(128));
 	  public static final DeferredItem<Item> CARD_NETHER = ITEMS.register("card_nether", () -> new ModCard(128));

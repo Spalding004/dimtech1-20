@@ -9,7 +9,9 @@ import com.mrspalding.dimtech.custom.blocks.ModOre;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -36,7 +38,15 @@ public class ModBlockLoot extends BlockLootSubProvider{
 	protected void generate() {
 	
 		
+		for (int endfs = 0; endfs < ModBlocks.endfections.size(); endfs++) {
+			Block oreBlock = ModBlocks.endfections.get(endfs);
+			this.dropSelf(oreBlock);
+		}
 		
+		for (int metals = 0; metals < ModBlocks.metals.size(); metals++) {
+			Block oreBlock = ModBlocks.metals.get(metals);
+			this.dropSelf(oreBlock);
+		}
 		
 		for (int stones = 0; stones <ModBlocks.stones.size(); stones++) {
 			this.dropSelf(ModBlocks.stones.get(stones));
@@ -58,6 +68,8 @@ public class ModBlockLoot extends BlockLootSubProvider{
 				this.add(oreBlock, block -> createOreDrop(oreBlock, (Item) toDrop.get()));
 			}
 		
+		this.add(ModBlocks.VENDAR_ORE_DENSE.get(), block -> createDenseDrops(ModBlocks.PUMICE.get(), ModItems.VENDAR_CHUNK));
+		
 		
 		for (int vdo = 0; vdo < ModBlocks.vanilla_dropping_ore.size(); vdo++) {
 			Block oreBlock = (ModOre) ModBlocks.vanilla_dropping_ore.get(vdo);
@@ -66,6 +78,8 @@ public class ModBlockLoot extends BlockLootSubProvider{
 				this.add(oreBlock, block -> createOreDrop(oreBlock, (Item) toDrop));
 			
 		}
+		
+		this.dropSelf(ModBlocks.PRISMARINE_ORE.get());
 		
 		for (int coals = 0; coals < ModBlocks.coal_ores.size(); coals++) {
 			this.dropSelf(ModBlocks.coal_ores.get(coals));
@@ -87,6 +101,29 @@ public class ModBlockLoot extends BlockLootSubProvider{
 	      );
 	   }
 
+	 protected LootTable.Builder createDenseDrops(Block p_251906_, ItemLike toDrop) {
+	      return createSilkTouchDispatchTable(
+	         p_251906_,
+	         this.applyExplosionDecay(
+	            p_251906_,
+	            LootItem.lootTableItem(toDrop)
+	               .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
+	               .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))
+	         )
+	      );
+	   }
+	
+	 protected LootTable.Builder selfDropOverride(Block block) {
+	      return createSilkTouchDispatchTable(
+	    		  block,
+	         this.applyExplosionDecay(
+	        		 block,
+	            LootItem.lootTableItem(block)
+	               .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
+	              
+	         )
+	      );
+	   }
 	
 	
 }

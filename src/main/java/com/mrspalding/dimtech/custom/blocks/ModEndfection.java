@@ -19,7 +19,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 
 
-public class ModEndfection extends Block{
+public class ModEndfection extends Block {
 
 private String type;
 	
@@ -32,11 +32,15 @@ private String type;
 			   })
 			);
 	
+	
 	this.type = type;
 	
 	ModBlocks.pickaxe.add(this);
 	ModBlocks.tool_any.add(this);
-	ModBlocks.stones.add(this);
+	
+	if (type == "ore") ModBlocks.cubes.add(this);
+	
+	ModBlocks.endfections.add(this);
 	
 	}
 	
@@ -49,7 +53,7 @@ private String type;
 	@Override //BlockState p_222508_, ServerLevel p_222509_, BlockPos p_222510_, RandomSource p_222511_
 	public void randomTick(BlockState state, ServerLevel worldIn, BlockPos pos, RandomSource rand) {
 		
-		if (!worldIn.getBlockState(pos.above()).isAir() && type != "O") {
+		if (!worldIn.getBlockState(pos.above()).isAir() && (type != "O" || type != "ore")) {
 			
 			worldIn.setBlockAndUpdate(pos, ModBlocks.ENDCROACHED_NETHERRACK.get().defaultBlockState());
 			

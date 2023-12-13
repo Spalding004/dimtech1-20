@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "dimtech:block/soilstone_brick",
+    "side": "dimtech:block/soilstone_brick",
+    "top": "dimtech:block/soilstone_brick"
+  }
+}

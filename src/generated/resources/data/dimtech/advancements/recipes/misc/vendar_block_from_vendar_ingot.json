@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:vendar_block_from_vendar_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vendar_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:vendar_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_vendar_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:vendar_block_from_vendar_ingot"
+    ]
+  }
+}

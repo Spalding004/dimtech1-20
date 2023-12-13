@@ -47,11 +47,11 @@ public class ModEndcroachment extends Block{
 				worldIn.setBlockAndUpdate(pos, ModBlocks.ENDFECTED_NETHERRACK_C.get().defaultBlockState());
 			}
 
-			if (type > 60 && type <= 75) {
+			if (type > 60 && type <= 70) {
 				worldIn.setBlockAndUpdate(pos, ModBlocks.ENDFECTED_NETHERRACK_A.get().defaultBlockState());
 			}
 
-			if (type > 75) {
+			if (type > 70) {
 				worldIn.setBlockAndUpdate(pos, ModBlocks.ENDFECTED_NETHERRACK_B.get().defaultBlockState());
 			}
 
@@ -68,7 +68,9 @@ public class ModEndcroachment extends Block{
 
 				if (worldIn.getBlockState(target_pos).getBlock() == Blocks.OBSIDIAN) {
 					worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDFECTED_OBSIDIAN.get().defaultBlockState());
-				} else {
+				} else if (worldIn.getBlockState(target_pos).getBlock() == Blocks.NETHER_QUARTZ_ORE) {
+					worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDFECTED_NETHER_QUARTZ_ORE.get().defaultBlockState());
+				} else{
 					worldIn.setBlockAndUpdate(target_pos, ModBlocks.ENDCROACHED_NETHERRACK.get().defaultBlockState());
 
 				}

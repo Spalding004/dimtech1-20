@@ -2,32 +2,36 @@ package com.mrspalding.dimtech.custom.blocks;
 
 import com.mrspalding.dimtech.custom.ModBlocks;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 @SuppressWarnings("rawtypes")
-public class ModOre extends Block{
+public class ModOre extends DropExperienceBlock{
 
 	private DeferredItem toDrop;
 	private Item         itemToDrop;
 	
+	
+	
 	public ModOre(int level, DeferredItem toDrop) {
-		super(BlockBehaviour.Properties
+		super(UniformInt.of(0,  1 + level), BlockBehaviour.Properties
 				.of()
 				.strength(3.0F, 3.0F)
 				.requiresCorrectToolForDrops()
 				);
 		
 		setup(level, toDrop);
+		
 		ModBlocks.ore.add(this);
 		
 			
 	}
 	
 	public ModOre(int level, Item toDrop) {
-		super(BlockBehaviour.Properties
+		super(UniformInt.of(0,  1 + level), BlockBehaviour.Properties
 				.of()
 				.strength(3.0F, 3.0F)
 				.requiresCorrectToolForDrops()

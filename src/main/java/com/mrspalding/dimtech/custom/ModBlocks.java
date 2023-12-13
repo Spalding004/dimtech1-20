@@ -6,8 +6,10 @@ import com.mrspalding.dimtech.Dimtech;
 import com.mrspalding.dimtech.custom.blocks.ModCoalOre;
 import com.mrspalding.dimtech.custom.blocks.ModCobbleable;
 import com.mrspalding.dimtech.custom.blocks.ModEndcroachment;
+import com.mrspalding.dimtech.custom.blocks.ModEndfectedOre;
 import com.mrspalding.dimtech.custom.blocks.ModEndfection;
 import com.mrspalding.dimtech.custom.blocks.ModFabric;
+import com.mrspalding.dimtech.custom.blocks.ModMetalBlock;
 import com.mrspalding.dimtech.custom.blocks.ModOre;
 import com.mrspalding.dimtech.custom.blocks.ModSlabStone;
 import com.mrspalding.dimtech.custom.blocks.ModStone;
@@ -27,7 +29,9 @@ public class ModBlocks {
 	public static ArrayList<Block> vanilla_dropping_ore = new ArrayList<>();
 	public static ArrayList<Block> stones = new ArrayList<>();
 	public static ArrayList<Block> cobbleable = new ArrayList<>();
+	public static ArrayList<Block> endfections = new ArrayList<>();
 	
+	public static ArrayList<Block> metals = new ArrayList<>();
 	
 	public static ArrayList<Block> tool_any = new ArrayList<>();
 	public static ArrayList<Block> tool_stone = new ArrayList<>();
@@ -81,6 +85,10 @@ public class ModBlocks {
 	public static final DeferredBlock<ModCobbleable> SOILSTONE = BLOCKS.register("soilstone", () -> new ModCobbleable(SOILSTONE_COBBLE));
 	public static final DeferredBlock<ModStoneBricks> SOILSTONE_BRICKS = BLOCKS.register("soilstone_brick", () -> new ModStoneBricks(SOILSTONE));
 	
+	public static final DeferredBlock<ModMetalBlock> VENDAR_BLOCK = BLOCKS.register("vendar_block",  () -> new ModMetalBlock(ModItems.VENDAR_INGOT));
+	public static final DeferredBlock<ModMetalBlock> INDIRIUM_BLOCK = BLOCKS.register("indirium_block",  () -> new ModMetalBlock(ModItems.INDIRIUM_INGOT));
+	public static final DeferredBlock<ModMetalBlock> GELDAR_BLOCK = BLOCKS.register("geldar_block",  () -> new ModMetalBlock(ModItems.GELDAR_INGOT));
+	public static final DeferredBlock<ModMetalBlock> VIRONIUM_BLOCK = BLOCKS.register("vironium_block",  () -> new ModMetalBlock(ModItems.VIRONIUM_INGOT));
 	//walls, stairs, slabs
 	public static final DeferredBlock<ModWallStone> POLISHED_MARCASITE_WALL = BLOCKS.register("polished_marcasite_wall", () -> new ModWallStone(MARCASITE_SMOOTH));
 	public static final DeferredBlock<ModStoneStairs> POLISHED_MARCASITE_STAIRS = BLOCKS.register("polished_marcasite_stairs", () -> new ModStoneStairs(ModBlocks.MARCASITE_SMOOTH));
@@ -145,7 +153,7 @@ public class ModBlocks {
 	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_B = BLOCKS.register("endfected_netherrack_b", () -> new ModEndfection("B"));
 	public static final DeferredBlock<ModEndfection> ENDFECTED_NETHERRACK_C = BLOCKS.register("endfected_netherrack_c", () -> new ModEndfection("C"));
 	public static final DeferredBlock<ModEndfection> ENDFECTED_OBSIDIAN = BLOCKS.register("endfected_obsidian", () -> new ModEndfection("O"));
-	public static final DeferredBlock<ModOre> ENDFECTED_NETHER_QUARTZ_ORE = BLOCKS.register("endfected_nether_quartz_ore", () -> new ModOre(1, Items.NETHER_QUARTZ_ORE));
+	public static final DeferredBlock<ModEndfectedOre> ENDFECTED_NETHER_QUARTZ_ORE = BLOCKS.register("endfected_nether_quartz_ore", () -> new ModEndfectedOre("ore"));
 	
 	//non-stones, non-machines
 	public static final DeferredBlock<ModFabric> WOVEN_LEATHER = BLOCKS.register("woven_leather", () -> new ModFabric());
