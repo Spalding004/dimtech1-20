@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:smelting/voidstone_from_voidstone_cobble"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

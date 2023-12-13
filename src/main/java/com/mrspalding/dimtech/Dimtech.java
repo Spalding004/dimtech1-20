@@ -2,11 +2,15 @@ package com.mrspalding.dimtech;
 
 import java.util.List;
 
+import javax.annotation.Nonnull;
+
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 import com.mrspalding.dimtech.custom.ModBlocks;
 import com.mrspalding.dimtech.custom.ModItems;
+import com.mrspalding.dimtech.events.lootmodifiers.ModGlobalLootModifiers;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -58,7 +62,7 @@ public class Dimtech
        
         
        
-        
+        ModGlobalLootModifiers.GLM.register(modEventBus);
         
        
         
@@ -102,7 +106,7 @@ public class Dimtech
     }
     
     
- 
+   
 	
     
 

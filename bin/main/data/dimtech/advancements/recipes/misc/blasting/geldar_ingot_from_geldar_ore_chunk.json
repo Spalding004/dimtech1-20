@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:blasting/geldar_ingot_from_geldar_ore_chunk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-10T21:32:32.988098	Item Models: dimtech
+// 1.20.4	2023-12-12T13:46:25.8803668	Item Models: dimtech
 0b0c8a7a14dfb2d4b6f9b3a62dc056b92fc28226 assets/dimtech/models/item/card_basic.json
 f1c08b814b0fd6914acec55cae19deacd936da15 assets/dimtech/models/item/card_end.json
 5c76d5d4fa440701c40e229b6f40aee4e33ab82c assets/dimtech/models/item/card_nether.json
@@ -22,6 +22,12 @@ e2268d0ac03d51eabc3d2efa5ca2a7204a0cbe96 assets/dimtech/models/item/indirium_chu
 b843d3d0cb0c181d75cd82eee1d5cb7051a6181e assets/dimtech/models/item/mixed_stone_slab.json
 7ff448d4adc10946d7e97a0750afebf0da06399b assets/dimtech/models/item/mixed_stone_stairs.json
 9b5f3e870404eefd6c20cfd80f7c0842e21bc9ac assets/dimtech/models/item/mixed_stone_wall.json
+0122d129432605ed159dc312f4f6c2bd5ab1dc24 assets/dimtech/models/item/netherrend_brick_slab.json
+ff911f07675f57598a08a095c0c86a6c9071a56c assets/dimtech/models/item/netherrend_brick_stairs.json
+b9b9970c638f4d3865744ace37ea0363a5e75870 assets/dimtech/models/item/netherrend_brick_wall.json
+080ce1698acee1266448cbaca9b18afb24244c0a assets/dimtech/models/item/netherstone_brick_slab.json
+793aface0f76b7d2b59729c70bb987440681f88e assets/dimtech/models/item/netherstone_brick_stairs.json
+3d42eb5f56ffbe51ea348a2e9724ce03a703d9cf assets/dimtech/models/item/netherstone_brick_wall.json
 6579147c8d3a2a5257a3f4a8572a806405a8dc14 assets/dimtech/models/item/nether_gaze.json
 5322f1d0d276ef0c24465f957381c8016f50e5c8 assets/dimtech/models/item/nether_pearl.json
 360dd364227202c3d94b6dbb6ec6b5c25ad15d9d assets/dimtech/models/item/polished_alunite_slab.json
@@ -48,9 +54,15 @@ f8e0efb010bed1f131ae720603682be0e2612bdb assets/dimtech/models/item/replicating_
 8bf330112e5ee5eb2dc1155ce73e2504de9c7a81 assets/dimtech/models/item/saving_book.json
 d1a9f08906f04f847a004c35b0f1717e81d95cd8 assets/dimtech/models/item/sawblade.json
 81afbdb030a62204ac979cf4f76f4af7e4ace074 assets/dimtech/models/item/sawdust.json
+3ebf7cb2c1aef8da544764eff0d12313ed55bc78 assets/dimtech/models/item/soilstone_brick_slab.json
+0bfee0694e67ca96f114a69201c1afd25d12f0a8 assets/dimtech/models/item/soilstone_brick_stairs.json
+0a57b947bc6b527eafae9a186db71e98a845f101 assets/dimtech/models/item/soilstone_brick_wall.json
 0e982c2a918c46f3e7078d7a4a2f2fe0038bbf0c assets/dimtech/models/item/steel_ingot.json
 331a55c1eabe22e69a541b1e117da1ac3e43c15b assets/dimtech/models/item/vendar_chunk.json
 350d89e18f75d754b883687dba2f94b2f378e671 assets/dimtech/models/item/vendar_ingot.json
 da913a6ed7d08a7d4ae7180a768a5eb6df34865e assets/dimtech/models/item/vironium_ingot.json
 c24b7590fcdc9cb286e5518bf06a4508322ab2e6 assets/dimtech/models/item/vironium_ore_chunk.json
+955293340cdc48e946a68e1f74ef02cac01cfbe6 assets/dimtech/models/item/voidstone_brick_slab.json
+9f711b3c6fe935fa5ef2867a04b6394438ae098c assets/dimtech/models/item/voidstone_brick_stairs.json
+0e6a55eeaf9c3efbb8274a7f10496fe91a828ece assets/dimtech/models/item/voidstone_brick_wall.json
 9af3526e946710dcab0587ce4c66eb2816710794 assets/dimtech/models/item/wood_pulp.json

@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:smelting/netherrend_from_cobbled_netherrend"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

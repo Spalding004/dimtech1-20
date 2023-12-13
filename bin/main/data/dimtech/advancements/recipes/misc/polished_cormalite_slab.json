@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:polished_cormalite_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

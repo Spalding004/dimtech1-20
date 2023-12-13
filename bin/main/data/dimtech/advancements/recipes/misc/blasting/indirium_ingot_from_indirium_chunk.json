@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:blasting/indirium_ingot_from_indirium_chunk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:blasting/vironium_ingot_from_vironium_ore_chunk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

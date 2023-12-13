@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:polished_alunite_slab"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

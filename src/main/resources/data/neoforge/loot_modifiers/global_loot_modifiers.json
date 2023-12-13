@@ -1,0 +1,8 @@
+{
+  "replace": false, // Must be present
+  "entries": [
+    // Represents a loot modifier in 'data/examplemod/loot_modifiers/example_glm.json'
+    "dimtech:special_drops",
+    // ...
+  ]
+}

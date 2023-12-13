@@ -30,6 +30,5 @@
     "recipes": [
       "dimtech:blasting/vendar_ingot_from_vendar_ore"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

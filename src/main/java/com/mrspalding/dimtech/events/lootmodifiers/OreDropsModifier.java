@@ -3,11 +3,15 @@ package com.mrspalding.dimtech.events.lootmodifiers;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Supplier;
+
 import javax.annotation.Nonnull;
 
 import org.jetbrains.annotations.NotNull;
 
+import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.mrspalding.dimtech.custom.ModItems;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -21,16 +25,21 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
 
-public class ModDropsModifier extends LootModifier {
+public class OreDropsModifier extends LootModifier {
 
 
-	public ModDropsModifier(LootItemCondition[] conditionsIn) {
+	public OreDropsModifier(LootItemCondition[] conditionsIn) {
 		super(conditionsIn);
 	}
+	
+	 public static final Supplier<Codec<OreDropsModifier>> CODEC = Suppliers.memoize(() ->
+     RecordCodecBuilder.create(inst -> codecStart(inst).apply(inst, OreDropsModifier::new)));
 
 	@SuppressWarnings("deprecation")
 	@Nonnull
-	public List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
+	@Override
+	protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot,
+			LootContext context) {
 		@SuppressWarnings("unused")
 		Random random = new Random();
 		String broken = generatedLoot.toString();
@@ -46,7 +55,7 @@ public class ModDropsModifier extends LootModifier {
 
 		}
 	
-		ArrayList<ItemStack> ret = checkloots(generatedLoot, broken, enchant_level, ctxTool, context);
+		ObjectArrayList<ItemStack> ret = checkloots(generatedLoot, broken, enchant_level, ctxTool, context);
 
 		if (ret.size() == 0 || generatedLoot.get(0).getItem() == ret.get(0).getItem()
 				|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, ctxTool) != 0) {
@@ -76,8 +85,8 @@ public class ModDropsModifier extends LootModifier {
 	 * 
 	 */
 
-	private ArrayList<ItemStack> checkloots(List<ItemStack> generatedLoot, String broken, int enchant, ItemStack tool, LootContext context) {
-		ArrayList<ItemStack> listReturn = new ArrayList<ItemStack>();
+	private ObjectArrayList<ItemStack> checkloots(List<ItemStack> generatedLoot, String broken, int enchant, ItemStack tool, LootContext context) {
+		ObjectArrayList<ItemStack> listReturn = new ObjectArrayList<ItemStack>();
 		Random random = new Random();
 		String checkedOre = "nonya";
 		/*              
@@ -111,45 +120,6 @@ public class ModDropsModifier extends LootModifier {
 			*/
 			
 
-		checkedOre = "vendar";
-		if (broken.contains(checkedOre + "_ore_dense")) {
-
-			listReturn.add(new ItemStack(ModItems.VENDAR_CHUNK.get(), 3 + random.nextInt(1 + enchant)));
-
-			return listReturn;
-		}
-		
-		checkedOre = "vendar";
-		if (broken.contains(checkedOre + "_ore")) {
-
-			listReturn.add(new ItemStack(ModItems.VENDAR_CHUNK.get(), 1 + random.nextInt(1 + enchant)));
-
-			return listReturn;
-		}
-
-		checkedOre = "indirium";
-		if (broken.contains(checkedOre + "_ore")) {
-
-		//	listReturn.add(new ItemStack(ModItems.INDIRIUM_CHUNK.get(), 1 + random.nextInt(1 + enchant)));
-
-			return listReturn;
-		}
-
-		checkedOre = "vironium";
-		if (broken.contains(checkedOre + "_ore")) {
-
-		//	listReturn.add(new ItemStack(ModItems.VIRONIUM_CHUNK.get(), 1 + random.nextInt(1 + enchant)));
-
-			return listReturn;
-		}
-
-		checkedOre = "geldar";
-		if (broken.contains(checkedOre + "_ore")) {
-
-		//	listReturn.add(new ItemStack(ModItems.GELDAR_CHUNK.get(), 1 + random.nextInt(1 + enchant)));
-
-			return listReturn;
-		}
 		
 		checkedOre = "prismarine";
 		if (broken.contains(checkedOre + "_ore")) {
@@ -166,7 +136,7 @@ public class ModDropsModifier extends LootModifier {
 		}
 
 		if (broken.contains("coal") && !broken.contains("coal_ore_")) {
-			listReturn = (ArrayList<ItemStack>) generatedLoot;
+			listReturn = (ObjectArrayList<ItemStack>) generatedLoot;
 			if (random.nextInt(200 + enchant * 2) >= 198)
 				listReturn.add(new ItemStack(ModItems.CHARGED_CARBON.get()));
 
@@ -249,7 +219,7 @@ public class ModDropsModifier extends LootModifier {
 			return listReturn;
 		}
 
-		return (ArrayList<ItemStack>) generatedLoot;
+		return (ObjectArrayList<ItemStack>) generatedLoot;
 
 	}
 /*
@@ -285,11 +255,6 @@ public class ModDropsModifier extends LootModifier {
 		return null;
 	}
 
-	@Override
-	protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot,
-			LootContext context) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 }
 
