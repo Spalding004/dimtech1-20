@@ -1,4 +1,4 @@
-// 1.20.4	2023-12-13T10:49:13.5186038	Block States: dimtech
+// 1.20.4	2023-12-13T17:24:08.3334896	Block States: dimtech
 e093808d9c6e8295928abc1af89ed7933893479d assets/dimtech/blockstates/alunite.json
 0f6d40419490f89b7383c77642e6b3dccaff8985 assets/dimtech/blockstates/alunite_smooth.json
 cc3258a7c377f9730645d6935471589a76e5264f assets/dimtech/blockstates/apatite.json
@@ -15,7 +15,9 @@ e0aef35e13335efb80c24dec117fdcd8c1c1b236 assets/dimtech/blockstates/cobblerack.j
 8cd1ea5c950be361ecd3aee2ac268e1ec74f651f assets/dimtech/blockstates/cormalite.json
 41f0488bfb11680dde17edc8e6511e6edb20f7a6 assets/dimtech/blockstates/cormalite_smooth.json
 919d2295b525da928a5fe2356a11870e4ece8a40 assets/dimtech/blockstates/endfected_nether_quartz_ore.json
+4e7d7a20e10b940c3eb494d38f978650456f97f9 assets/dimtech/blockstates/geldar_block.json
 bdcb5c2f84fa445f8ae0898ccd6169eff8049525 assets/dimtech/blockstates/geldar_ore.json
+02e7a2905b59da8bcb3e25330844fc6593d7be44 assets/dimtech/blockstates/indirium_block.json
 adea44701a3016abb59d3076381532b977807d44 assets/dimtech/blockstates/indirium_ore.json
 bcc5a7c5715d52cd87036945896bfcfeab6040ff assets/dimtech/blockstates/marcasite.json
 c70edd4ba26c1c9a9d2cef7d3a9ca057b5db3fe1 assets/dimtech/blockstates/marcasite_smooth.json
@@ -63,8 +65,10 @@ c51f39d7021069de9c25ac0f5ae2d15b8d4a45fd assets/dimtech/blockstates/shale.json
 7a7991571e2abe1fe103930d6ee35e17269799e4 assets/dimtech/blockstates/soilstone_cobble.json
 19375b0a4d18b4f3529f75a40e1e848da94b4e06 assets/dimtech/blockstates/umber.json
 a3515e47cde1f74058f3e469f6a4276dcd5cdd49 assets/dimtech/blockstates/umber_smooth.json
+55dc2d4a75231823be9fddae3a0d48de159ce329 assets/dimtech/blockstates/vendar_block.json
 04a17e2fd6c888e696c9c7044c9d138ca6be9e38 assets/dimtech/blockstates/vendar_ore.json
 446795c45a8a533c4080faed823a8de7a9db7031 assets/dimtech/blockstates/vendar_ore_dense.json
+5959c03ad58c295aaa685e3243d5f22790f3bfa0 assets/dimtech/blockstates/vironium_block.json
 aa423c0ee40d5301e8ba59c516b357f0db12e493 assets/dimtech/blockstates/vironium_ore.json
 413dba9d470915ea20df5761837ad27d3b34d117 assets/dimtech/blockstates/voidstone.json
 ca0fd5691f59aca2fc877eaaeff1bf22fe960185 assets/dimtech/blockstates/voidstone_bricks.json
@@ -89,7 +93,9 @@ d5da86002060ba2422e872b61d6693a6ad5c58fe assets/dimtech/models/block/cobblerack.
 b6b7a083d19a38158a4d5f76276a6fc341acf4c8 assets/dimtech/models/block/cormalite.json
 fd3986c67a6ba815c7f7fb62fb07143f802adc82 assets/dimtech/models/block/cormalite_smooth.json
 7c432cc62173b90ad7a876adae4fc8993deddba0 assets/dimtech/models/block/endfected_nether_quartz_ore.json
+7c9f20eb4abd09ac957df94ce53878b2e51ebd1f assets/dimtech/models/block/geldar_block.json
 99c5b3c852f294882eb8a44e5da9dc2511fde869 assets/dimtech/models/block/geldar_ore.json
+af7231eb777faa946c5199ed259c7fa230317605 assets/dimtech/models/block/indirium_block.json
 75238c216ff58d2a5f60ef76186f3eacbbb5fd0b assets/dimtech/models/block/indirium_ore.json
 262c509ea8c34b6477d3e96a5c262470f10fac65 assets/dimtech/models/block/marcasite.json
 e06d12ad85298a1f844c86956a99a08c4b73d030 assets/dimtech/models/block/marcasite_smooth.json
@@ -187,8 +193,10 @@ decc992ffff758e608e78cf866f5492b45012299 assets/dimtech/models/block/soilstone_b
 1e9b7fb4e61ebabf58dda5f1fab2c11312f57f57 assets/dimtech/models/block/soilstone_cobble.json
 8087291bc7ba49e049babc2c583c64ea53423cb4 assets/dimtech/models/block/umber.json
 2a3fdcf6c26113b9239f763c251b2e1b2601ed57 assets/dimtech/models/block/umber_smooth.json
+da6e6f381dd235cd8d0dac5c4d3595e866ed04fe assets/dimtech/models/block/vendar_block.json
 e4fd23702cb6437b519c9c9cc2c2bf58c9570ffc assets/dimtech/models/block/vendar_ore.json
 585242cb0cbf43828c5f31f810a538b84258052a assets/dimtech/models/block/vendar_ore_dense.json
+bc13e9f6bb9e79d051aeaa65b1dbb9a8bf398790 assets/dimtech/models/block/vironium_block.json
 1b0fd875646ab421ef8909ff2bb36d1228065419 assets/dimtech/models/block/vironium_ore.json
 78df786bff3d407ccb20486c33904aa040373f71 assets/dimtech/models/block/voidstone.json
 8200967a58bccf320b975bbcd02545724443584e assets/dimtech/models/block/voidstone_bricks.json
@@ -218,7 +226,9 @@ c3b0269541125ff2ba6d882533861103a2956143 assets/dimtech/models/item/coal_ore_lap
 7de72f41cf545418946d4ff3e466894d5bf9c049 assets/dimtech/models/item/cormalite.json
 1045a4f7d7d325a22ee4b50ed1c1ce0ac75ebe0f assets/dimtech/models/item/cormalite_smooth.json
 467e040443229df03dd7f5f638f8aea3aee552d3 assets/dimtech/models/item/endfected_nether_quartz_ore.json
+d90aff5f644a705c5e0eee9f35b24a4102ed161e assets/dimtech/models/item/geldar_block.json
 d40aafcbdd4e255a908e0f91c133b4277f39635f assets/dimtech/models/item/geldar_ore.json
+03bc7ed31303896595798e529293d73e18e956a3 assets/dimtech/models/item/indirium_block.json
 40ce164b75fc998fa3cadb08007637f70e5100c8 assets/dimtech/models/item/indirium_ore.json
 37332d5512d190e7866abe1c67ddda73cea7d172 assets/dimtech/models/item/marcasite.json
 47d2a0c1e7dd87230ce1723d6c80f35a123b6990 assets/dimtech/models/item/marcasite_smooth.json
@@ -236,8 +246,10 @@ be828565b645124bf417d48eacf463f71f2d7cf7 assets/dimtech/models/item/netherstone_
 6bf42f5d2901a9bc566e24cfc1d94c6143466e28 assets/dimtech/models/item/soilstone_cobble.json
 b6ee136a81aa777798257b2d1feb66b8ce2d16cb assets/dimtech/models/item/umber.json
 79d8fab47d6fef7a46e6e64f4819522b5b2ea484 assets/dimtech/models/item/umber_smooth.json
+a6dbcc1ae0595316d33606d5fd3589f6dbd0de19 assets/dimtech/models/item/vendar_block.json
 7b493f9648f2f82b190390eafea12240f22b9c1d assets/dimtech/models/item/vendar_ore.json
 dd0b02715d842e5ecafbd85ab90d6d1c09ccc122 assets/dimtech/models/item/vendar_ore_dense.json
+13a6b6f8e1c8afdf98559fd7425b2a0e6ef66c8b assets/dimtech/models/item/vironium_block.json
 b270252f436c6cea58673cd22974abb59f687615 assets/dimtech/models/item/vironium_ore.json
 ded26e66e78e28a5d5459fd017c0204d77c54e0b assets/dimtech/models/item/voidstone.json
 b86a1b7f54a6918a8d560304ee12830e9d49adda assets/dimtech/models/item/voidstone_bricks.json

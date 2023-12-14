@@ -1,0 +1,4 @@
+// 1.20.4	2023-12-14T08:19:37.190492	Registries
+1cf3275aecc2b67b925bf793077881855ec0c3b5 data/dimtech/neoforge/biome_modifier/add_indirium_ore.json
+fe6a0ad3b0b7c25a122669363d0e1ad5aa1c830a data/dimtech/worldgen/configured_feature/vironium_ore.json
+659b56c8bf1acecc7cd02bee926929ebe49b1db7 data/dimtech/worldgen/placed_feature/indirium_ore_placed.json
