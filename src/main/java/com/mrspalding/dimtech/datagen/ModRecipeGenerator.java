@@ -41,11 +41,6 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 	private static final List<List<ItemLike>> SMELTABLES = List.of(VENDAR, INDIRIUM, GELDAR, VIRONIUM);
 	
 	
-	
-	
-	
-	
-	
 	@Override
 	protected void buildRecipes(RecipeOutput recipe) {
 		
@@ -101,7 +96,14 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
 			
 		}
 		
-		
+				
+		x2Recipe(ModBlocks.SHAR, ModBlocks.POLISHED_SHAR, recipe);
+		x2Recipe(ModBlocks.ALUNITE, ModBlocks.ALUNITE_SMOOTH, recipe);
+		x2Recipe(ModBlocks.MARCASITE, ModBlocks.MARCASITE_SMOOTH, recipe);
+		x2Recipe(ModBlocks.APATITE, ModBlocks.APATITE_SMOOTH, recipe);
+		x2Recipe(ModBlocks.SHALE, ModBlocks.SHALE_SMOOTH, recipe);
+		x2Recipe(ModBlocks.CORMALITE, ModBlocks.CORMALITE_SMOOTH, recipe);
+		x2Recipe(ModBlocks.UMBER, ModBlocks.UMBER_SMOOTH, recipe);
 		
 		
 		for (int x = 0; x < ModBlocks.walls.size(); x++) {

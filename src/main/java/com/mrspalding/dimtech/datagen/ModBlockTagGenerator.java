@@ -58,6 +58,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider{
 		
 		
 		
+		
 	}
 	
 	

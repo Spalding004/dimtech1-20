@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dimtech:umber_smooth"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umber": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dimtech:umber"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_umber"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dimtech:umber_smooth"
+    ]
+  }
+}

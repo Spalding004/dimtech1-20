@@ -27,6 +27,11 @@ public class ModBlockstateProvider extends BlockStateProvider{
 		slabBlock(ModBlocks.POLISHED_APATITE_SLAB.get(), blockTexture(ModBlocks.APATITE_SMOOTH.get()),
 				   blockTexture(ModBlocks.APATITE_SMOOTH.get()));
 		
+		stairsBlock(ModBlocks.POLISHED_SHAR_BRICK_STAIRS.get(), blockTexture(ModBlocks.POLISHED_SHAR_BRICKS.get()));
+		wallBlock((WallBlock) ModBlocks.POLISHED_SHAR_BRICK_WALL.get(), blockTexture(ModBlocks.POLISHED_SHAR_BRICKS.get()));
+		slabBlock(ModBlocks.POLISHED_SHAR_BRICK_SLAB.get(), blockTexture(ModBlocks.POLISHED_SHAR_BRICKS.get()),
+				   blockTexture(ModBlocks.POLISHED_SHAR_BRICKS.get()));
+		
 		stairsBlock(ModBlocks.NETHERREND_BRICK_STAIRS.get(), blockTexture(ModBlocks.NETHERREND_BRICKS.get()));
 		wallBlock((WallBlock) ModBlocks.NETHERREND_BRICK_WALL.get(), blockTexture(ModBlocks.NETHERREND_BRICKS.get()));
 		slabBlock(ModBlocks.NETHERREND_BRICK_SLAB.get(), blockTexture(ModBlocks.NETHERREND_BRICKS.get()),

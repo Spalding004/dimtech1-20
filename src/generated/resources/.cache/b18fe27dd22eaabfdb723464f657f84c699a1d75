@@ -1,4 +1,4 @@
-// 1.20.4	2023-12-12T13:46:25.8803668	Item Models: dimtech
+// 1.20.4	2023-12-14T13:51:30.3491248	Item Models: dimtech
 0b0c8a7a14dfb2d4b6f9b3a62dc056b92fc28226 assets/dimtech/models/item/card_basic.json
 f1c08b814b0fd6914acec55cae19deacd936da15 assets/dimtech/models/item/card_end.json
 5c76d5d4fa440701c40e229b6f40aee4e33ab82c assets/dimtech/models/item/card_nether.json
@@ -45,6 +45,9 @@ d69df07849f6a58a7f73ebc4a5c1141f1d2ca0ff assets/dimtech/models/item/polished_mar
 89e66faa0cfaf54335b487f4dc68f14f71fd4828 assets/dimtech/models/item/polished_shale_slab.json
 1d066ba305dd8875b2f5a591b54f81299fc09b08 assets/dimtech/models/item/polished_shale_stairs.json
 81deceb9ef3a228887e25f476ebc3be7efdd80c8 assets/dimtech/models/item/polished_shale_wall.json
+e091581dc366a8c1d1fb6dd6c6f09fd71c15ad3f assets/dimtech/models/item/polished_shar_brick_slab.json
+30a9f3446643e8ce4ed17e9ff2b8b93e7181bde6 assets/dimtech/models/item/polished_shar_brick_stairs.json
+b817e2d27b37225cc4016173f182ef172d4e0851 assets/dimtech/models/item/polished_shar_brick_wall.json
 e57647fb9291daa9b70706f1e81bc42bb3b19c63 assets/dimtech/models/item/polished_umber_slab.json
 26d557f7adc49787496bfe943afd8b35e56a7d81 assets/dimtech/models/item/polished_umber_stairs.json
 a051d625212e39fa156b81cc4a0cbb8963aaab81 assets/dimtech/models/item/polished_umber_wall.json

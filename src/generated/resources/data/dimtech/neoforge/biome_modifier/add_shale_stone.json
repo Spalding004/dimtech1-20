@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#dimtech:is_water",
+  "features": "dimtech:shale_placed",
+  "step": "underground_ores"
+}

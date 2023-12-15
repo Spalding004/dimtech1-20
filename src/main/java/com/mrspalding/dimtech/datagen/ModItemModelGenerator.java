@@ -38,6 +38,10 @@ public class ModItemModelGenerator extends ItemModelProvider{
 			evenSimplerBlockItem(ModBlocks.POLISHED_APATITE_SLAB);
 			evenSimplerBlockItem(ModBlocks.POLISHED_APATITE_STAIRS);
 			
+			wallItem(ModBlocks.POLISHED_SHAR_BRICK_WALL, ModBlocks.POLISHED_SHAR_BRICKS);
+			evenSimplerBlockItem(ModBlocks.POLISHED_SHAR_BRICK_SLAB);
+			evenSimplerBlockItem(ModBlocks.POLISHED_SHAR_BRICK_STAIRS);
+			
 			wallItem(ModBlocks.POLISHED_SHALE_WALL, ModBlocks.SHALE_SMOOTH);
 			evenSimplerBlockItem(ModBlocks.POLISHED_SHALE_SLAB);
 			evenSimplerBlockItem(ModBlocks.POLISHED_SHALE_STAIRS);

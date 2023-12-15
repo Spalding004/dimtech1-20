@@ -79,6 +79,14 @@ public class ModBlocks {
 	
 	public static final DeferredBlock<ModStoneBricks> VOIDSTONE_BRICKS = BLOCKS.register("voidstone_bricks", () -> new ModStoneBricks(VOIDSTONE));
 	
+	public static final DeferredBlock<ModStone> COBBLED_SHAR = BLOCKS.register("cobbled_shar", () -> new ModStone());
+	public static final DeferredBlock<ModCobbleable> SHAR = BLOCKS.register("shar", () -> new ModCobbleable(COBBLED_SHAR));
+	public static final DeferredBlock<ModStone> POLISHED_SHAR = BLOCKS.register("polished_shar", () -> new ModStone());
+	
+	public static final DeferredBlock<ModStoneBricks> POLISHED_SHAR_BRICKS = BLOCKS.register("polished_shar_bricks", () -> new ModStoneBricks(POLISHED_SHAR));
+	public static final DeferredBlock<ModStone> ENFRAMED_SHAR = BLOCKS.register("enframed_shar", () -> new ModStone(3));
+	
+	
 	public static final DeferredBlock<ModStone> MIXED_STONE = BLOCKS.register("mixed_stone", () -> new ModStone());
 	
 	public static final DeferredBlock<ModStone> SOILSTONE_COBBLE = BLOCKS.register("soilstone_cobble", () -> new ModStone());
@@ -97,6 +105,10 @@ public class ModBlocks {
 	public static final DeferredBlock<ModWallStone> VOIDSTONE_BRICK_WALL = BLOCKS.register("voidstone_brick_wall", () -> new ModWallStone(VOIDSTONE_BRICKS));
 	public static final DeferredBlock<ModStoneStairs> VOIDSTONE_BRICK_STAIRS = BLOCKS.register("voidstone_brick_stairs", () -> new ModStoneStairs(VOIDSTONE_BRICKS));
 	public static final DeferredBlock<ModSlabStone> VOIDSTONE_BRICK_SLAB = BLOCKS.register("voidstone_brick_slab", () -> new ModSlabStone(VOIDSTONE_BRICKS));
+	
+	public static final DeferredBlock<ModWallStone> POLISHED_SHAR_BRICK_WALL = BLOCKS.register("polished_shar_brick_wall", () -> new ModWallStone(POLISHED_SHAR_BRICKS));
+	public static final DeferredBlock<ModStoneStairs> POLISHED_SHAR_BRICK_STAIRS = BLOCKS.register("polished_shar_brick_stairs", () -> new ModStoneStairs(POLISHED_SHAR_BRICKS));
+	public static final DeferredBlock<ModSlabStone> POLISHED_SHAR_BRICK_SLAB = BLOCKS.register("polished_shar_brick_slab", () -> new ModSlabStone(POLISHED_SHAR_BRICKS));
 	
 	public static final DeferredBlock<ModWallStone> SOILSTONE_BRICK_WALL = BLOCKS.register("soilstone_brick_wall", () -> new ModWallStone(SOILSTONE_BRICKS));
 	public static final DeferredBlock<ModStoneStairs> SOILSTONE_BRICK_STAIRS = BLOCKS.register("soilstone_brick_stairs", () -> new ModStoneStairs(SOILSTONE_BRICKS));
@@ -133,7 +145,12 @@ public class ModBlocks {
 	public static final DeferredBlock<ModOre> VENDAR_ORE = BLOCKS.register("vendar_ore", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
 	public static final DeferredBlock<ModOre> VENDAR_ORE_DENSE = BLOCKS.register("vendar_ore_dense", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
 	
-	public static final DeferredBlock<ModOre> INDIRIUM_ORE = BLOCKS.register("indirium_ore", () -> new ModOre(3, ModItems.INDIRIUM_CHUNK));
+	public static final DeferredBlock<ModOre> DEEPSLATE_VENDAR_ORE = BLOCKS.register("deepslate_vendar_ore", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
+	public static final DeferredBlock<ModOre> DEEPSLATE_VENDAR_ORE_DENSE = BLOCKS.register("deepslate_vendar_ore_dense", () -> new ModOre(3, ModItems.VENDAR_CHUNK));
+	
+	public static final DeferredBlock<ModOre> DEEPSLATE_INDIRIUM_ORE = BLOCKS.register("deepslate_indirium_ore", () -> new ModOre(2, ModItems.INDIRIUM_CHUNK));
+	public static final DeferredBlock<ModOre> INDIRIUM_ORE = BLOCKS.register("indirium_ore", () -> new ModOre(2, ModItems.INDIRIUM_CHUNK));
+	
 	public static final DeferredBlock<ModOre> GELDAR_ORE = BLOCKS.register("geldar_ore", () -> new ModOre(3, ModItems.GELDAR_CHUNK));
 	public static final DeferredBlock<ModOre> VIRONIUM_ORE = BLOCKS.register("vironium_ore", () -> new ModOre(3, ModItems.VIRONIUM_CHUNK));
 	public static final DeferredBlock<ModOre> PRISMARINE_ORE = BLOCKS.register("prismarine_ore", () -> new ModOre(3, Items.PRISMARINE_CRYSTALS));

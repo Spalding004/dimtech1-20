@@ -68,8 +68,8 @@ public class ModBlockLoot extends BlockLootSubProvider{
 				this.add(oreBlock, block -> createOreDrop(oreBlock, (Item) toDrop.get()));
 			}
 		
-		this.add(ModBlocks.VENDAR_ORE_DENSE.get(), block -> createDenseDrops(ModBlocks.PUMICE.get(), ModItems.VENDAR_CHUNK));
-		
+		this.add(ModBlocks.VENDAR_ORE_DENSE.get(), block -> createDenseDrops(ModBlocks.VENDAR_ORE_DENSE.get(), ModItems.VENDAR_CHUNK));
+		this.add(ModBlocks.DEEPSLATE_VENDAR_ORE_DENSE.get(), block -> createDenseDrops(ModBlocks.DEEPSLATE_VENDAR_ORE_DENSE.get(), ModItems.VENDAR_CHUNK));
 		
 		for (int vdo = 0; vdo < ModBlocks.vanilla_dropping_ore.size(); vdo++) {
 			Block oreBlock = (ModOre) ModBlocks.vanilla_dropping_ore.get(vdo);

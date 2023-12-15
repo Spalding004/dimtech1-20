@@ -1,4 +1,4 @@
-package com.mrspalding.dimtech.worldgen;
+package com.mrspalding.dimtech.worldgen.placements;
 
 import java.util.List;
 
